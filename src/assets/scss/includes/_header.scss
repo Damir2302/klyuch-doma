@@ -1,0 +1,14 @@
+.header__top {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__mob-menu {
+    margin-top: auto;
+    margin-bottom: 4px;
+    font-size: 32px;
+    line-height: 1;
+    color: $blue;
+    cursor: pointer;
+}

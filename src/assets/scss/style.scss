@@ -1,0 +1,20 @@
+$black: #252527;
+$blue: #143A84;
+$darkblue: #0C2555;
+$red: #E6332A;
+$darkred: #B7261F;
+
+@import 'plugins/swiper-bundle';
+
+@import 'base/mixins';
+@import 'base/normalize';
+@import 'base/fonts';
+@import 'base/reset';
+@import 'base/ui';
+
+@import 'includes/header';
+@import 'includes/footer';
+
+@import 'components/breadcrumbs';
+
+@import 'pages/index';

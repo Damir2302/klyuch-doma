@@ -1,0 +1,217 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    -webkit-text-size-adjust: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body.overflow-hidden {
+    overflow: hidden;
+}
+
+body b {
+    font-weight: 700;
+    color: #000;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+
+    @include breakpoint(lg) {
+        width: 2px;
+        height: 10px;
+    }
+}
+
+// ::-webkit-scrollbar-thumb {
+//     background: $blue;
+// }
+
+::-webkit-scrollbar-track {
+    background: #f7f7f7;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance:none;
+}
+
+main {
+    min-height: calc(max(calc(100vh - 614px), 650px));
+
+    @include breakpoint(md) {
+        min-height: calc(max(calc(100vh - 614px), 570px));
+    }
+}
+
+.hide {
+    display: none!important;
+}
+
+#page {
+    position: relative;
+    min-width: 320px;
+    min-height: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+#page::before {
+
+    @include breakpoint(md) {
+        content: '';
+    }
+}
+
+#page.bg-overlay::before {
+
+    @include breakpoint(md) {
+        background: rgba(0, 0, 0, 0.2);
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        transition: all 0.5s ease;
+    }
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    box-sizing: border-box;
+
+    @include breakpoint(lg) {
+        padding: 0 40px;
+    }
+
+    @include breakpoint(xl) {
+        padding: 0 100px;
+    }
+}
+
+input {
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    box-sizing: content-box;
+}
+
+textarea {
+    background: transparent;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    resize: none;
+    border: none;
+    outline: none;
+    box-sizing: content-box;
+}
+
+.main-title {
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 140%;
+    color: $black;
+    text-transform: uppercase;
+
+    @include breakpoint(md) {
+        font-size: 45px;
+    }
+
+    @include breakpoint(hd) {
+        font-size: 60px;
+    }
+}
+
+.s-title {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 140%;
+    color: $black;
+    text-transform: uppercase;
+
+    @include breakpoint(md) {
+        font-size: 38px;
+    }
+
+    @include breakpoint(hd) {
+        font-size: 50px;
+    }
+}
+
+.button-style {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #fff;
+    display: inline-block;
+    border-radius: 36px;
+}
+
+.button-style--red {
+    background: $red;
+}
+
+.button-style--red:hover {
+    background: $darkred;
+}
+
+.button-style--blue {
+    background: $blue;
+}
+
+.button-style--blue:hover {
+    background: $darkblue;
+}
+
+.ach__video {
+    position: relative;
+    height: calc((100vw - 40px) / 1.75);
+}
+
+.video-play {
+    position: absolute;
+    top: calc(50% - 10px);
+    left: calc(50% - 10px);
+    font-size: 20px;
+    line-height: 20px;
+    color: $red;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.video-play::before {
+    content: '';
+    position: absolute;
+    top: -45px;
+    left: -50px;
+    width: 113px;
+    height: 113px;
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+}
+
+.video-play::after {
+    content: '';
+    background: rgba(255, 255, 255, 0.15);
+    position: absolute;
+    top: -25px;
+    left: -30px;
+    width: 73px;
+    height: 73px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+}
