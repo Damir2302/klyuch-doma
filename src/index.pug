@@ -324,3 +324,104 @@ block main
                     .construction__item-list
                         p Дизайн интервьеров и ландшафта
                         p Малые формы
+
+    .s-form
+
+        .container
+
+            .s-form__label
+                p.s-form__subtitle Остались вопросы?
+                p.s-title Ответим!
+
+            form.form-question
+
+                .input-style
+                    input(type="text" placeholder="Имя" required)
+
+                .input-style
+                    input(type="tel" placeholder="Телефон" required)
+
+                .input-style
+                    input(type="email" placeholder="Почта" required)
+
+                .button-style.button-style--red
+                    input(type="submit" value="Отправить")
+
+                div.form-question-bottom.d-flex
+                    i.fal.fa-square-check
+                    p Согласен(на) на <a href="#">обработку персональных данных</a>
+
+    .solution
+
+        .container
+
+            h2.s-title Решения для&nbsp;бизнеса
+
+            .solution__inner
+
+                .solution__item
+                    h4 Обустройство территорий отдыха
+                    p Дома для глэмпингов, зон отдыха, загородных комплексов
+                    a.button-style.button-style--red(href="#") Подробнее
+
+                .solution__item
+                    h4 Производство пиломатериалов высокого качества
+                    p Описать что производим. Описать что производим. Описать что производим.
+                    a.button-style.button-style--red(href="#") Подробнее
+
+                .solution__item
+                    h4 Высококласссная продукция для строительных бригад
+                    p Произведем, быстро и безопасно доставим на площадку
+                    a.button-style.button-style--red(href="#") Подробнее
+
+    .work
+
+        .container
+
+            h2.s-title Мы построили более 1000 домов за 15 лет!
+
+            .work__inner
+
+                .work__block
+                    .work__image
+                        img(src="assets/images/work-1.jpg", alt="img")
+                    .work__image
+                        img(src="assets/images/work-2.jpg", alt="img")
+                    .work__image
+                        img(src="assets/images/work-3.jpg", alt="img")
+
+                .work__block
+                    .work__image
+                        img(src="assets/images/work-4.jpg", alt="img")
+                    .work__image
+                        img(src="assets/images/work-5.jpg", alt="img")
+                    .work__image
+                        img(src="assets/images/work-6.jpg", alt="img")
+
+                a.button-style.button-style--blue(href="#") Смотреть все фото
+
+    .h-contacts
+
+        .container
+
+            h2.s-title Приезжайте и&nbsp;оцените качество своими глазами
+
+            .h-contacts__inner
+
+                .h-contacts__info
+
+                    p.h-contacts__info-title Выставочная площадка, офис продаж:
+
+                    p.h-contacts__info-address г. Владимир, ул. Куйбышева, Д.28А (Тандем). 600035
+                    p.h-contacts__info-worktime пн-пт: 9:00 - 18:00
+                    p.h-contacts__info-worktime сб-вс 10:00-15:00
+                    p.h-contacts__info-worktime-label Работаем ежедневно
+
+                    p.h-contacts__info-phone
+                        a(href="tel:+7(920)911-93-91") +7 (920) 911-93-91
+                    p.h-contacts__info-mail
+                        a(href="mailto:dom@kluch585.ru") dom@kluch585.ru
+
+                .h-contacts__map
+
+                    #yaMap(style="width: 100%; height: 100%")

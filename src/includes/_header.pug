@@ -11,5 +11,25 @@ block header
                     a(href="/")
                         img(src="assets/images/logo.svg", alt="logo")
 
+                nav.header__nav
+
+                    ul.nav__menu
+
+                        li.nav__menu-item
+                            a.nav__menu-link(href="#") Меню
+                        li.nav__menu-item.has-submenu
+                            a.nav__menu-link(href="#") Дома
+                        li.nav__menu-item.has-submenu
+                            a.nav__menu-link(href="#") Малые формы
+                        li.nav__menu-item
+                            a.nav__menu-link(href="#") Блог
+
+                .header__contact
+                    .contact-number
+                        a.header-number(href="tel:+7(920)911-93-91") +7 (920) 911-93-91
+                        .header-callback Перезвоните мне
+                    .whatsapp-icon
+                        i.far.fa-whatsapp
+
                 .header__mob-menu
                     i.far.fa-bars

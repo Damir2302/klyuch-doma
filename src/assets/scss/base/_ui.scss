@@ -89,6 +89,7 @@ main {
     margin: 0 auto;
     padding: 0 20px;
     position: relative;
+    max-width: 1920px;
     box-sizing: border-box;
 
     @include breakpoint(lg) {
@@ -214,4 +215,27 @@ textarea {
     height: 73px;
     border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 50%;
+}
+
+.d-flex {
+    display: flex;
+    align-items: baseline;
+}
+
+.input-style  {
+    padding-bottom: 12px;
+    border-bottom: 1px solid #8792A6;
+}
+
+.input-style input {
+    height: 30px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+.input-style input::placeholder {
+    color: #fff;
 }

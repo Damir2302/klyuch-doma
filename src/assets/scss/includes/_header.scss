@@ -2,6 +2,188 @@
     padding: 10px 0;
     display: flex;
     justify-content: space-between;
+
+    @include breakpoint(md) {
+        padding: 20px 0 25px;
+        align-items: center;
+    }
+
+    @include breakpoint(lg) {
+        padding: 25px 0;
+    }
+
+    @include breakpoint(xl) {
+        padding: 34px 0 44px;
+    }
+
+    @include breakpoint(hd) {
+        padding: 34px 0 55px;
+    }
+}
+
+.header__logo {
+
+    @include breakpoint(md) {
+        width: 162px;
+        height: 68px;
+    }
+
+    @include breakpoint(xl) {
+        width: 202px;
+        height: 85px;
+    }
+}
+
+.header__nav {
+    display: none;
+
+    @include breakpoint(lg) {
+        display: block;
+    }
+}
+
+.nav__menu {
+
+    @include breakpoint(lg) {
+        display: flex;
+    }
+}
+
+.nav__menu-item ~ .nav__menu-item {
+
+    @include breakpoint(lg) {
+        margin-left: 22px;
+    }
+
+    @include breakpoint(xl) {
+        margin-left: 40px;
+    }
+}
+
+.nav__menu-item:first-child::before {
+
+    @include breakpoint(lg) {
+        content: '\f0c9';
+        margin-right: 8px;
+        font-family: $icon;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1;
+        color: $blue;
+    }
+
+    @include breakpoint(xl) {
+        font-size: 18px;
+    }
+}
+
+.nav__menu-item.has-submenu::after {
+
+    @include breakpoint(lg) {
+        content: '\f078';
+        margin-left: 8px;
+        font-family: $icon;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1;
+        color: $blue;
+    }
+
+    @include breakpoint(xl) {
+        font-size: 18px;
+    }
+}
+
+.nav__menu-item:hover *,
+.nav__menu-item:hover::before,
+.nav__menu-item:hover::after {
+    color: $red;
+}
+
+.nav__menu-link {
+
+    @include breakpoint(lg) {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        color: $blue;
+        text-transform: uppercase;
+    }
+
+    @include breakpoint(xl) {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    @include breakpoint(hd) {
+        font-size: 22px;
+        line-height: 27px;
+    }
+}
+
+.header__contact {
+    display: none;
+
+    @include breakpoint(md) {
+        margin-left: auto;
+        margin-right: 100px;
+        display: flex;
+    }
+
+    @include breakpoint(lg) {
+        margin: 0;
+    }
+}
+
+.contact-number {
+    text-align: right;
+}
+
+.header-number {
+    display: block;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+
+    @include breakpoint(hd) {
+        font-size: 22px;
+        line-height: 30px;
+    }
+}
+
+.header-callback {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #96969C;
+    border-bottom: 2px dashed #96969C;
+    cursor: pointer;
+
+    @include breakpoint(hd) {
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
+.header-callback:hover {
+    color: $red;
+    border-color: $red;
+}
+
+.whatsapp-icon {
+    margin-left: 24px;
+    font-size: 32px;
+    line-height: 37px;
+    color: $blue;
+
+    @include breakpoint(xl) {
+        margin-left: 36px;
+    }
+
+    @include breakpoint(hd) {
+        margin-left: 40px;
+    }
 }
 
 .header__mob-menu {
@@ -11,4 +193,12 @@
     line-height: 1;
     color: $blue;
     cursor: pointer;
+
+    @include breakpoint(md) {
+        margin: 0;
+    }
+
+    @include breakpoint(lg) {
+        display: none;
+    }
 }

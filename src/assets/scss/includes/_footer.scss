@@ -1,0 +1,297 @@
+.footer {
+    padding: 30px 0 34px;
+
+    @include breakpoint(md) {
+        padding: 40px 0;
+    }
+
+    @include breakpoint(xl) {
+        padding: 60px 0 25px;
+    }
+
+    @include breakpoint(hd) {
+        padding: 100px 0 30px;
+    }
+}
+
+.footer__top {
+    border-bottom: 1px solid rgba(184, 184, 184, 0.5);
+}
+
+.footer__menu {
+
+    @include breakpoint(md) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    @include breakpoint(hd) {
+        justify-content: space-between;
+    }
+}
+
+.footer__menu-item {
+    margin-bottom: 30px;
+
+    @include breakpoint(md) {
+        margin-bottom: 50px;
+        width: 40%;
+    }
+
+    @include breakpoint(lg) {
+        width: 33%;
+    }
+
+    @include breakpoint(xl) {
+        width: 25%;
+    }
+
+    @include breakpoint(hd) {
+        width: auto;
+    }
+}
+
+.footer__menu-item > a {
+    margin-bottom: 18px;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 14px;
+    color: $black;
+    text-transform: uppercase;
+}
+
+.footer__submenu-item {
+    margin-bottom: 12px;
+}
+
+.footer__submenu-item > a {
+    color: #777777;
+}
+
+.footer__submenu-item > a:hover {
+    color: $black;
+}
+
+.footer__menu-link {
+    margin-top: 12px;
+    margin-bottom: 0;
+    font-weight: 700;
+    color: $red!important;
+    text-transform: uppercase;
+    text-decoration-line: underline;
+}
+
+.footer__menu-link:hover {
+    color: $darkred!important;
+}
+
+.footer__middle {
+    padding: 40px 0;
+    border-bottom: 1px solid rgba(184, 184, 184, 0.5);
+
+    @include breakpoint(xl) {
+        padding: 50px 0;
+    }
+}
+
+.footer__middle-inner {
+
+    @include breakpoint(md) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    @include breakpoint(xl) {
+        justify-content: space-between;
+    }
+}
+
+.footer__worktime,
+.footer__address,
+.footer__call,
+.footer__socials {
+
+    @include breakpoint(md) {
+        width: 280px;
+    }
+}
+
+.footer__worktime p,
+.footer__address p,
+.footer__call p {
+    display: flex;
+}
+
+.footer__worktime p::before,
+.footer__address p::before,
+.footer__call p::before {
+    margin-top: 4px;
+    margin-right: 14px;
+    font-family: $icon;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1;
+    color: $red;
+}
+
+.footer__worktime {
+
+    @include breakpoint(md) {
+        order: 1;
+    }
+}
+
+.footer__worktime-worktime {
+    margin-bottom: 12px;
+}
+
+.footer__worktime-worktime::before {
+    content: '\f017';
+}
+
+.footer__worktime-worktime-label {
+    margin-bottom: 30px;
+    color: #828282;
+}
+
+.footer__address {
+
+    @include breakpoint(md) {
+        order: 3;
+    }
+}
+
+.footer__address-mail::before {
+    content: '\f0e0';
+}
+
+.footer__address-address {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.footer__address-address::before {
+    content: '\f3c5';
+}
+
+.footer__call {
+
+    @include breakpoint(md) {
+        margin-left: 20px;
+        order: 4;
+    }
+
+    @include breakpoint(lg) {
+        margin-left: 0;
+    }
+
+    @include breakpoint(xl) {
+        text-align: right;
+    }
+}
+
+.footer__call-phone {
+    margin-bottom: 12px;
+    font-weight: 700;
+
+    @include breakpoint(xl) {
+        justify-content: flex-end;
+    }
+}
+
+.footer__call-phone::before {
+    content: '\f095';
+    font-size: 23px!important;
+}
+
+.footer__call-phone > a {
+    font-size: 23px;
+    line-height: 28px;
+}
+
+.footer__call .button-style {
+    margin-top: 16px;
+    padding: 13px 40px;
+    font-size: 16px;
+}
+
+.footer__socials {
+    margin-top: 30px;
+
+    @include breakpoint(md) {
+        margin-top: 0;
+        margin-left: 20px;
+        order: 2;
+    }
+}
+
+.footer__socials-list {
+    margin-top: 20px;
+}
+
+.footer__socials-list a {
+    font-size: 20px;
+    line-height: 23px;
+    color: $red;
+}
+
+.footer__socials-list a ~ a {
+    margin-left: 22px;
+}
+
+.footer__bottom {
+    padding-top: 25px;
+}
+
+.footer__bottom-inner {
+
+    @include breakpoint(md) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.footer__end {
+
+    @include breakpoint(lg) {
+        display: flex;
+    }
+}
+
+.footer__developer {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+}
+
+.footer__developer a {
+    margin-bottom: 5px;
+    display: block;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+}
+
+.footer__copyrights {
+    margin-top: 35px;
+
+    @include breakpoint(md) {
+        margin-top: 0;
+        text-align: right;
+    }
+}
+
+.footer__policy {
+    margin-top: 15px;
+
+    @include breakpoint(lg) {
+        margin-top: 0;
+        margin-left: 78px;
+    }
+
+    @include breakpoint(hd) {
+        margin-left: 94px;
+    }
+}
