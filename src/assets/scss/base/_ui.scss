@@ -178,45 +178,6 @@ textarea {
     background: $darkblue;
 }
 
-.ach__video {
-    position: relative;
-    height: calc((100vw - 40px) / 1.75);
-}
-
-.video-play {
-    position: absolute;
-    top: calc(50% - 10px);
-    left: calc(50% - 10px);
-    font-size: 20px;
-    line-height: 20px;
-    color: $red;
-    z-index: 1;
-    cursor: pointer;
-}
-
-.video-play::before {
-    content: '';
-    position: absolute;
-    top: -45px;
-    left: -50px;
-    width: 113px;
-    height: 113px;
-    border: 2px solid rgba(255, 255, 255, 0.15);
-    border-radius: 50%;
-}
-
-.video-play::after {
-    content: '';
-    background: rgba(255, 255, 255, 0.15);
-    position: absolute;
-    top: -25px;
-    left: -30px;
-    width: 73px;
-    height: 73px;
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    border-radius: 50%;
-}
-
 .d-flex {
     display: flex;
     align-items: baseline;
