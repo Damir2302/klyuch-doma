@@ -25,4 +25,15 @@ $(document).ready(function() {
         myMap.behaviors.disable('scrollZoom')
     });
 
+    // MOBILE MENU
+    $('.header__mob-menu').on('click', function() {
+        $('body').addClass('overflow-hidden');
+        $('.header__nav').addClass('mobile-menu');
+    })
+
+    $('.mobile-close-menu').on('click', function() {
+        $('body').removeClass('overflow-hidden');
+        $('.header__nav').removeClass('mobile-menu');
+    })
+
 });
