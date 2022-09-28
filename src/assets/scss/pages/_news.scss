@@ -1,0 +1,126 @@
+.news {
+    margin-top: 20px;
+    margin-bottom: 60px;
+
+    @include breakpoint(md) {
+        margin-top: 0;
+        margin-bottom: 80px;
+    }
+
+    @include breakpoint(lg) {
+        margin-bottom: 100px;
+    }
+
+    @include breakpoint(xl) {
+        margin-bottom: 120px;
+    }
+
+    @include breakpoint(hd) {
+        margin-bottom: 150px;
+    }
+}
+
+.news__items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -12px;
+
+    @include breakpoint(md) {
+        margin-right: -20px;
+        margin-top: -20px;
+    }
+
+    @include breakpoint(lg) {
+        margin-right: -30px;
+        margin-top: -25px;
+    }
+
+    @include breakpoint(xl) {
+        margin-right: -40px;
+    }
+
+    @include breakpoint(hd) {
+        margin-top: -40px;
+    }
+}
+.news__item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+
+    @include breakpoint(md) {
+        margin-right: 20px;
+        margin-top: 20px;
+        margin-bottom: 0;
+        width: calc((100% - 60px) / 3);
+    }
+
+    @include breakpoint(lg) {
+        margin-right: 30px;
+        margin-top: 25px;
+        width: calc((100% - 90px) / 3);
+    }
+
+    @include breakpoint(xl) {
+        margin-right: 40px;
+        width: calc((100% - 120px) / 3);
+    }
+
+    @include breakpoint(hd) {
+        margin-top: 40px;
+    }
+}
+
+.news__item-img {
+    margin-bottom: 20px;
+    height: calc((100vw - 40px) / 1.333);
+    overflow: hidden;
+
+    @include breakpoint(md) {
+        height: calc(((100vw / 3) - 28px) / 1.333);
+    }
+
+    @include breakpoint(lg) {
+        height: calc(((100vw / 3) - 48px) / 1.34);
+    }
+
+    @include breakpoint(xl) {
+        height: calc(((100vw / 3) - 95px) / 1.34);
+    }
+
+    @include breakpoint(hd) {
+        height: 407px;
+    }
+}
+
+.news__item-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 140%;
+    color: $black;
+    margin-bottom: 12px;
+    @include textLimit(3);
+
+    @include breakpoint(hd) {
+        @include textLimit(2);
+    }
+}
+
+.news__item-desc {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #252527;
+    @include textLimit(2);
+
+    @include breakpoint(md) {
+        @include textLimit(3);
+    }
+}
+
+.news .pagination  {
+    justify-content: center;
+}

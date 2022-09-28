@@ -138,6 +138,7 @@ textarea {
 }
 
 .s-title {
+    margin-bottom: 30px;
     font-weight: 700;
     font-size: 25px;
     line-height: 140%;
@@ -145,10 +146,16 @@ textarea {
     text-transform: uppercase;
 
     @include breakpoint(md) {
+        margin-bottom: 40px;
         font-size: 38px;
     }
 
+    @include breakpoint(xl) {
+        margin-bottom: 50px;
+    }
+
     @include breakpoint(hd) {
+        margin-bottom: 60px;
         font-size: 50px;
     }
 }

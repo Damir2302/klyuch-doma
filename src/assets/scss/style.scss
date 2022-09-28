@@ -23,5 +23,10 @@ $gray6: #F2F2F2;
 @import 'includes/footer';
 
 @import 'components/breadcrumbs';
+@import 'components/pagination';
 
 @import 'pages/index';
+@import 'pages/news';
+@import 'pages/news-detail';
+@import 'pages/about';
+@import 'pages/contacts';

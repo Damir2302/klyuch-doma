@@ -1,0 +1,28 @@
+.pagination {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+
+    @include breakpoint(lg) {
+        margin-top: 50px;
+    }
+
+    @include breakpoint(hd) {
+        margin-top: 60px;
+    }
+}
+.pagination-item {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 21px;
+    color: $black;
+}
+
+.pagination-item ~ .pagination-item {
+    margin-left: 21.5px;
+}
+
+.pagination-item.active {
+    color: #143A84;
+}

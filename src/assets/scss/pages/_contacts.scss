@@ -1,0 +1,208 @@
+.contacts {
+    margin-top: 20px;
+
+    @include breakpoint(md) {
+        margin-top: 0;
+    }
+}
+
+.contacts {
+    padding: 60px 0;
+    background: $gray6;
+
+    @include breakpoint(md) {
+        padding: 80px 0;
+    }
+
+    @include breakpoint(lg) {
+        padding: 100px 0;
+    }
+
+    @include breakpoint(xl) {
+        padding: 120px 0;
+    }
+
+    @include breakpoint(hd) {
+        padding: 150px 0;
+    }
+}
+
+.contacts .s-title {
+    margin-bottom: 30px;
+
+    @include breakpoint(md) {
+        margin-bottom: 40px;
+        max-width: 580px;
+    }
+
+    @include breakpoint(lg) {
+        max-width: 844px;
+    }
+
+    @include breakpoint(xl) {
+        margin-bottom: 50px;
+    }
+
+    @include breakpoint(hd) {
+        margin-bottom: 60px;
+    }
+}
+
+.contacts__inner {
+
+    @include breakpoint(lg) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.contacts__info {
+    padding: 30px 20px;
+    background: #fff;
+
+    @include breakpoint(md) {
+        padding: 40px;
+    }
+
+    @include breakpoint(lg) {
+        min-width: 376px;
+        max-width: 376px;
+    }
+
+    @include breakpoint(xl) {
+        padding: 50px;
+        min-width: 477px;
+        max-width: 477px;
+    }
+
+    @include breakpoint(hd) {
+        min-width: 547px;
+        max-width: 547px;
+    }
+}
+
+.contacts__info-title  {
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    @include breakpoint(md) {
+        font-size: 20px;
+    }
+
+    @include breakpoint(hd) {
+        font-size: 25px;
+    }
+}
+
+.contacts__wrap {
+
+    @include breakpoint(md) {
+        display: flex;
+    }
+
+    @include breakpoint(lg) {
+        display: block;
+    }
+}
+
+.contacts__block {
+
+    @include breakpoint(md) {
+        max-width: 278px;
+    }
+
+    @include breakpoint(hd) {
+        max-width: 100%;
+    }
+}
+
+.contacts__block ~ .contacts__block  {
+
+    @include breakpoint(md) {
+        margin-left: 45px;
+    }
+
+    @include breakpoint(lg) {
+        margin-top: 30px;
+        margin-left: 0;
+    }
+}
+
+.contacts__block p {
+    display: flex;
+}
+
+.contacts__block p::before {
+    margin-top: 4px;
+    margin-right: 14px;
+    font-family: $icon;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1;
+    color: $red;
+}
+
+.contacts__info-address {
+    margin-bottom: 30px;
+}
+
+.contacts__info-address::before {
+    content: '\f3c5';
+}
+
+.contacts__info-worktime {
+    margin-bottom: 12px;
+}
+
+.contacts__info-worktime::before {
+    content: '\f017';
+}
+
+.contacts__info-worktime-label {
+    margin-bottom: 30px;
+    color: $gray3;
+
+    @include breakpoint(md) {
+        margin-bottom: 0;
+    }
+}
+
+.contacts__info-phone {
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.contacts__info-phone::before {
+    content: '\f095';
+}
+
+.contacts__info-mail::before {
+    content: '\f0e0';
+}
+
+.contacts__map {
+    width: 100%;
+    height: calc((100vw - 40px) / 0.78);
+
+    @include breakpoint(md) {
+        height: calc((100vw - 40px) / 1.91);
+    }
+
+    @include breakpoint(lg) {
+        margin-left: 30px;
+        min-height: 464px;
+        max-height: 464px;
+    }
+
+    @include breakpoint(xl) {
+        margin-left: 40px;
+        min-height: 454px;
+        max-height: 454px;
+    }
+
+    @include breakpoint(hd) {
+        min-height: 469px;
+        max-height: 469px;
+    }
+}

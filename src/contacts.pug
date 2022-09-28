@@ -1,0 +1,40 @@
+---
+title: Klyuch 585 | Контакты
+---
+
+extends includes/_page
+
+block main
+
+    include components/_breadcrumbs
+    +breadcrumbs('Контакты')
+
+    section.contacts
+
+        .container
+
+            h1.s-title Контакты
+
+            .contacts__inner
+
+                .contacts__info
+
+                    p.contacts__info-title Выставочная площадка, офис продаж:
+
+                    .contacts__wrap
+
+                        .contacts__block
+                            p.contacts__info-address г. Владимир, ул. Куйбышева, Д.28А (Тандем). 600035
+                            p.contacts__info-worktime пн-пт: 9:00 - 18:00
+                            p.contacts__info-worktime сб-вс 10:00-15:00
+                            p.contacts__info-worktime-label Работаем ежедневно
+
+                        .contacts__block
+                            p.contacts__info-phone
+                                a(href="tel:+7(920)911-93-91") +7 (920) 911-93-91
+                            p.contacts__info-mail
+                                a(href="mailto:dom@kluch585.ru") dom@kluch585.ru
+
+                .contacts__map
+
+                    #yaMap(style="width: 100%; height: 100%")
