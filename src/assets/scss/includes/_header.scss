@@ -191,7 +191,6 @@
 }
 
 .nav__menu {
-    display: none;
 
     @include breakpoint(lg) {
         display: flex;
@@ -226,7 +225,7 @@
     }
 }
 
-.nav__menu-item.has-submenu::after {
+.nav__menu-item.has-submenu:not(:first-child)::after {
 
     @include breakpoint(lg) {
         content: '\f078';
@@ -246,10 +245,17 @@
 .nav__menu-item:hover *,
 .nav__menu-item:hover::before,
 .nav__menu-item:hover::after {
-    color: $red;
+
+    @include breakpoint(lg) {
+        color: $red;
+    }
 }
 
 .nav__menu-link {
+
+    @include breakpointMax(lg) {
+        display: none;
+    }
 
     @include breakpoint(lg) {
         font-weight: 600;
