@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Klyuch 585 | Новости детальная</title>
+    <title>Klyuch 585 | Каталог</title>
     <!-- Styles::Start-->
     <link rel="stylesheet" href="assets/css/plugins.min.css">
     <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
@@ -15,7 +15,7 @@
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 </head>
 
-<body>
+<body class="cat-inner-page">
     <div id="page">
         <!-- Header::Start-->
         <header class="header" id="header">
@@ -113,34 +113,104 @@
                     <div class="breadcrumbs">
                         <div class="breadcrumbs-wrapper">
                             <div class="breadcrumbs-item"><a href="/">Главная</a></div><span class="breadcrumbs-separator">/</span>
-                            <div class="breadcrumbs-item"><a href="#">Блог</a></div><span class="breadcrumbs-separator">/</span>
-                            <div class="breadcrumbs-item"><span>Название статьи</span></div>
+                            <div class="breadcrumbs-item"><a href="#">Каталог</a></div><span class="breadcrumbs-separator">/</span>
+                            <div class="breadcrumbs-item"><span>Каркасные дома</span></div>
                         </div>
                     </div>
-                    <h1 class="s-title">Название статьи</h1>
+                    <div class="cat-inner__hero">
+                        <div class="cat-inner__hero-desc">
+                            <h1 class="cat-inner__hero-title">Каркасные дома</h1>
+                            <div class="cat-inner__levels">
+                                <div class="cat-inner__level-item">
+                                    <p>Устойчивость в влаге</p>
+                                    <div class="cat-inner__level-value"><span></span><span></span><span></span><span></span><span></span></div>
+                                </div>
+                                <div class="cat-inner__level-item">
+                                    <p>Устойчивость к морозам</p>
+                                    <div class="cat-inner__level-value"><span></span><span></span><span></span><span></span><span></span></div>
+                                </div>
+                                <div class="cat-inner__level-item">
+                                    <p>Надежность</p>
+                                    <div class="cat-inner__level-value"><span></span><span></span><span></span><span></span><span></span></div>
+                                </div>
+                                <div class="cat-inner__level-item">
+                                    <p>Стоимость строительства</p>
+                                    <div class="cat-inner__level-value"><span></span><span></span><span></span><span></span><span></span></div>
+                                </div>
+                            </div>
+                            <div class="cat-inner__hero-bottom"><a class="button-style button-style--red">Перейти в каталог</a>
+                                <div class="label-style label-style--red">от 2,1 млн руб.</div>
+                                <div class="label-style label-style--black">21 вариант</div>
+                            </div>
+                        </div>
+                        <div class="cat-inner__hero-image"><img src="assets/images/house-frame.png" alt="img"></div>
+                    </div>
                 </div>
             </div>
-            <section class="news-detail-section">
+            <section class="catalog">
                 <div class="container">
-                    <div class="news-detail">
-                        <div class="news-detail__date">3 августа 2022</div>
-                        <div class="news-detail__img"><img src="assets/images/news-detail.png" alt="">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </div>
-                        <div class="news-detail__content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur tellus purus dui, sapien dui. Ut faucibus massa tortor nibh. Diam morbi ipsum habitant mi. Eros molestie urna, ultrices a nibh enim hendrerit volutpat. Amet, sit sit ligula mattis aliquet neque sit risus, phasellus. Vulputate pretium lorem erat tincidunt quam pulvinar. Auctor fermentum vel fringilla eget dictumst massa vel. Leo justo ipsum, mauris amet libero mauris. Ut nisi, interdum diam mattis lacus commodo venenatis.</p>
-                            <h2>Подзаголовок</h2>
-                            <ul>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur tellus purus dui, sapien</li>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur tellus purus dui, sapien</li>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur tellus purus dui, sapien</li>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur tellus purus dui, sapien</li>
-                            </ul>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur tellus purus dui, sapien dui. Ut faucibus massa tortor nibh. Diam morbi ipsum habitant mi. Eros molestie urna, ultrices a nibh enim hendrerit volutpat. Amet, sit sit ligula mattis aliquet neque sit risus, phasellus. Vulputate pretium lorem erat tincidunt quam pulvinar. Auctor fermentum vel fringilla eget dictumst massa vel. Leo justo ipsum, mauris amet libero mauris. Ut nisi, interdum diam mattis lacus commodo venenatis.</p>
-                        </div>
+                    <div class="catalog__inner">
+                        <div class="catalog__item"><a href="#">
+                                <div class="catalog__item-image"><img src="assets/images/img-4.jpg" alt="img"></div>
+                                <p class="catalog__item-title">Коттеджи</p>
+                                <p class="catalog__item-price label-style label-style--red">от 1 680 000 ₽</p>
+                            </a></div>
+                        <div class="catalog__item"><a href="#">
+                                <div class="catalog__item-image"><img src="assets/images/img-2.jpg" alt="img"></div>
+                                <p class="catalog__item-title">Небольшие дома</p>
+                                <p class="catalog__item-price label-style label-style--red">от 2 349 000 ₽</p>
+                            </a></div>
+                        <div class="catalog__item"><a href="#">
+                                <div class="catalog__item-image"><img src="assets/images/img-3.jpg" alt="img"></div>
+                                <p class="catalog__item-title">Дачные и садовые</p>
+                                <p class="catalog__item-price label-style label-style--red">от 179 000 ₽</p>
+                            </a></div>
+                        <div class="catalog__item"><a href="#">
+                                <div class="catalog__item-image"><img src="assets/images/img-4.jpg" alt="img"></div>
+                                <p class="catalog__item-title">Бани</p>
+                                <p class="catalog__item-price label-style label-style--red">от 1 102 000 ₽</p>
+                            </a></div>
+                        <div class="catalog__item"><a href="#">
+                                <div class="catalog__item-image"><img src="assets/images/img-5.jpg" alt="img"></div>
+                                <p class="catalog__item-title">Барнхаусы</p>
+                                <p class="catalog__item-price label-style label-style--red">от 1 958 000 ₽</p>
+                            </a></div>
+                        <div class="catalog__item"><a href="#">
+                                <div class="catalog__item-image"><img src="assets/images/img-6.jpg" alt="img"></div>
+                                <p class="catalog__item-title">Модульные дома</p>
+                                <p class="catalog__item-price label-style label-style--red">от 179 000 ₽</p>
+                            </a></div>
                     </div>
                 </div>
             </section>
+            <div class="catalog__blog">
+                <div class="container">
+                    <h2 class="s-title">Полезные материалы</h2>
+                    <div class="news__items">
+                        <div class="news__item">
+                            <div class="news__item-img"><img src="assets/images/news-item.png" alt=""></div>
+                            <div class="news__item-content">
+                                <div class="news__item-title">Дом для постоянного проживания - о чем нужно знать</div>
+                                <div class="news__item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem hendrerit ultrices etiam nunc tellus elementum.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news__item">
+                        <div class="news__item-img"><img src="assets/images/news-item.png" alt=""></div>
+                        <div class="news__item-content">
+                            <div class="news__item-title">Дом для постоянного проживания - о чем нужно знать</div>
+                            <div class="news__item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem hendrerit ultrices etiam nunc tellus elementum.</div>
+                        </div>
+                    </div>
+                    <div class="news__item">
+                        <div class="news__item-img"><img src="assets/images/news-item.png" alt=""></div>
+                        <div class="news__item-content">
+                            <div class="news__item-title">Дом для постоянного проживания - о чем нужно знать</div>
+                            <div class="news__item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem hendrerit ultrices etiam nunc tellus elementum.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
         <!-- Main::End-->
         <!-- Footer::Start-->

@@ -98,7 +98,7 @@
     }
 }
 
-.mob-menu {
+.popup-menu {
     font-weight: 700;
     font-size: 18px;
     text-transform: uppercase;
@@ -110,34 +110,102 @@
     }
 
     @include breakpoint(lg) {
+        padding: 60px 40px 70px 70px;
+        background: $gray6;
+        position: fixed;
+        top: 118px;
+        left: 0;
         display: none;
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+        z-index: 2;
+    }
+
+    @include breakpoint(xl) {
+        padding: 60px 100px 75px 130px;
+    }
+
+    @include breakpoint(hd) {
+        padding: 70px 100px 100px 130px;
+        justify-content: unset;
     }
 }
 
-.mob-menu__item {
+.nav__menu-item.active .popup-menu {
+
+    @include breakpoint(lg) {
+        display: flex;
+    }
+}
+
+.close-popup-menu {
+
+    @include breakpointMax(lg) {
+        display: none;
+    }
+
+    @include breakpoint(lg) {
+        position: absolute;
+        top: 60px;
+        right: 40px;
+        cursor: pointer;
+    }
+
+    @include breakpoint(xl) {
+        right: 100px;
+    }
+}
+
+.close-popup-menu::before {
+    content: '\f00d';
+    font-family: $icon;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 1;
+}
+
+.popup-menu__item {
     margin-bottom: 40px;
 
     @include breakpoint(md) {
         margin-bottom: 60px;
         max-width: 305px;
     }
+
+    @include breakpoint(lg) {
+        width: calc((100% / 3) - 70px);
+        max-width: 100%;
+    }
+
+    @include breakpoint(hd) {
+        width: 25%;
+    }
 }
 
-.mob-menu__item:nth-child(odd) {
+.popup-menu__item:nth-child(odd) {
 
-    @include breakpoint(md) {
+    @include breakpointMax(lg) {
         width: calc((100% / 12) * 7);
     }
-}
 
-.mob-menu__item:nth-child(even) {
-
-    @include breakpoint(md) {
-        width: calc((100% / 12) * 5);
+    @include breakpointMax(md) {
+        width: auto;
     }
 }
 
-.mob-submenu {
+.popup-menu__item:nth-child(even) {
+
+    @include breakpointMax(lg) {
+        width: calc((100% / 12) * 5);
+    }
+
+    @include breakpointMax(md) {
+        width: auto;
+    }
+}
+
+.popup-submenu {
     margin-top: 22px;
 
     @include breakpoint(md) {
@@ -145,7 +213,7 @@
     }
 }
 
-.mob-submenu__item {
+.popup-submenu__item {
     margin-bottom: 15px;
     position: relative;
 
@@ -154,20 +222,17 @@
     }
 }
 
-.mob-submenu__item.special::before {
-
-    @include breakpointMax(lg) {
-        content: '\f005';
-        position: absolute;
-        top: 6px;
-        left: -20px;
-        display: inline-block;
-        font-family: $fa5;
-        font-weight: 900;
-        font-size: 12px;
-        line-height: 1;
-        color: $red;
-    }
+.popup-submenu__item.special::before {
+    content: '\f005';
+    position: absolute;
+    top: 6px;
+    left: -20px;
+    display: inline-block;
+    font-family: $fa5;
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 1;
+    color: $red;
 
     @include breakpoint(md) {
         left: -29px;
@@ -175,11 +240,11 @@
     }
 }
 
-.mob-submenu__link {
+.popup-submenu__link {
     color: #777;
 }
 
-.mob-menu-link {
+.popup-menu-link {
     margin-top: 7px;
     display: inline-block;
     color: $red;
@@ -218,6 +283,7 @@
         font-size: 16px;
         line-height: 1;
         color: $blue;
+        cursor: pointer;
     }
 
     @include breakpoint(xl) {
@@ -242,13 +308,18 @@
     }
 }
 
-.nav__menu-item:hover *,
+.nav__menu-item:hover .nav__menu-link,
 .nav__menu-item:hover::before,
 .nav__menu-item:hover::after {
 
     @include breakpoint(lg) {
         color: $red;
     }
+}
+
+.nav__menu-item.active > .nav__menu-link,
+.nav__menu-item.active::before {
+    color: $red;
 }
 
 .nav__menu-link {

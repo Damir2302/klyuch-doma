@@ -357,18 +357,11 @@
 
 .catalog__item-price {
     margin-top: 15px;
-    padding: 13px 20px;
-    background: #FFEFEF;
-    display: inline-block;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    color: $red;
-    border-radius: 41px;
+
 
     @include breakpoint(md) {
         margin-top: 20px;
-        font-size: 20px;
+
     }
 }
 
@@ -446,12 +439,6 @@
     @include breakpoint(lg) {
         word-break: break-word;
     }
-}
-
-.s-catalog .catalog__item-price {
-    background: #E3E9F6;
-    color: $blue;
-    border-radius: 41px;
 }
 
 .catalog__button {
@@ -1853,5 +1840,206 @@
 
     @include breakpoint(hd) {
         margin-top: 60px;
+    }
+}
+
+.h-contacts {
+    padding: 60px 0;
+    background: $gray6;
+
+    @include breakpoint(md) {
+        padding: 80px 0;
+    }
+
+    @include breakpoint(lg) {
+        padding: 100px 0;
+    }
+
+    @include breakpoint(xl) {
+        padding: 120px 0;
+    }
+
+    @include breakpoint(hd) {
+        padding: 150px 0;
+    }
+}
+
+.h-contacts .s-title {
+    margin-top: 0;
+
+    @include breakpoint(md) {
+        margin-top: 0;
+        max-width: 580px;
+    }
+
+    @include breakpoint(lg) {
+        max-width: 844px;
+    }
+
+    @include breakpoint(xl) {
+        margin-top: 0;
+    }
+
+    @include breakpoint(hd) {
+        margin-top: 0;
+    }
+}
+
+.h-contacts__inner {
+
+    @include breakpoint(lg) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.h-contacts__info {
+    padding: 30px 20px;
+    background: #fff;
+
+    @include breakpoint(md) {
+        padding: 40px;
+    }
+
+    @include breakpoint(lg) {
+        min-width: 376px;
+        max-width: 376px;
+    }
+
+    @include breakpoint(xl) {
+        padding: 50px;
+        min-width: 477px;
+        max-width: 477px;
+    }
+
+    @include breakpoint(hd) {
+        min-width: 547px;
+        max-width: 547px;
+    }
+}
+
+.h-contacts__info-title  {
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    @include breakpoint(md) {
+        font-size: 20px;
+    }
+
+    @include breakpoint(hd) {
+        font-size: 25px;
+    }
+}
+
+.h-contacts__wrap {
+
+    @include breakpoint(md) {
+        display: flex;
+    }
+
+    @include breakpoint(lg) {
+        display: block;
+    }
+}
+
+.h-contacts__block {
+
+    @include breakpoint(md) {
+        max-width: 278px;
+    }
+
+    @include breakpoint(hd) {
+        max-width: 100%;
+    }
+}
+
+.h-contacts__block ~ .h-contacts__block  {
+
+    @include breakpoint(md) {
+        margin-left: 45px;
+    }
+
+    @include breakpoint(lg) {
+        margin-top: 30px;
+        margin-left: 0;
+    }
+}
+
+.h-contacts__block p {
+    display: flex;
+}
+
+.h-contacts__block p::before {
+    margin-top: 4px;
+    margin-right: 14px;
+    font-family: $icon;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1;
+    color: $red;
+}
+
+.h-contacts__info-address {
+    margin-bottom: 30px;
+}
+
+.h-contacts__info-address::before {
+    content: '\f3c5';
+}
+
+.h-contacts__info-worktime {
+    margin-bottom: 12px;
+}
+
+.h-contacts__info-worktime::before {
+    content: '\f017';
+}
+
+.h-contacts__info-worktime-label {
+    margin-bottom: 30px;
+    color: $gray3;
+
+    @include breakpoint(md) {
+        margin-bottom: 0;
+    }
+}
+
+.h-contacts__info-phone {
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.h-contacts__info-phone::before {
+    content: '\f095';
+}
+
+.h-contacts__info-mail::before {
+    content: '\f0e0';
+}
+
+.h-contacts__map {
+    width: 100%;
+    height: calc((100vw - 40px) / 0.78);
+
+    @include breakpoint(md) {
+        height: calc((100vw - 40px) / 1.91);
+    }
+
+    @include breakpoint(lg) {
+        margin-left: 30px;
+        min-height: 464px;
+        max-height: 464px;
+    }
+
+    @include breakpoint(xl) {
+        margin-left: 40px;
+        min-height: 454px;
+        max-height: 454px;
+    }
+
+    @include breakpoint(hd) {
+        min-height: 469px;
+        max-height: 469px;
     }
 }

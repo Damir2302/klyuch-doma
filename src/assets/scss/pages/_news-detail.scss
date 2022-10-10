@@ -1,26 +1,8 @@
 .news-detail-section {
-    margin-top: 20px;
-    margin-bottom: 60px;
-
-    @include breakpoint(md) {
-       margin-bottom: 80px;
-    }
-
-    @include breakpoint(lg) {
-        margin-bottom: 100px;
-    }
-
-    @include breakpoint(xl) {
-        margin-bottom: 120px;
-    }
-
-    @include breakpoint(hd) {
-        margin-bottom: 150px;
-    }
+    padding-top: 20px;
 }
 
 .news-detail-section .s-title {
-    margin-bottom: 20px;
     max-width: 580px;
 
     @include breakpoint(lg) {

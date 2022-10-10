@@ -1,25 +1,9 @@
 .about-section {
-    margin-top: 20px;
-    margin-bottom: 40px;
+    padding-top: 20px;
 
     @include breakpoint(md) {
-        margin-top: 0;
-        margin-bottom: 80px;
+        padding-top: 25px;
     }
-
-    @include breakpoint(lg) {
-        margin-bottom: 100px;
-    }
-
-    @include breakpoint(xl) {
-        margin-bottom: 120px;
-    }
-
-    @include breakpoint(hd) {
-        margin-bottom: 150px;
-    }
-
-
 }
 
 .about-section-wrapper {

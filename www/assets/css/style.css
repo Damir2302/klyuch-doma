@@ -1473,10 +1473,6 @@ textarea {
     }
 }
 
-.nav__menu {
-    display: none
-}
-
 @media (min-width: 1024px) {
     .nav__menu {
         display: -webkit-box;
@@ -1516,7 +1512,7 @@ textarea {
 }
 
 @media (min-width: 1024px) {
-    .nav__menu-item.has-submenu::after {
+    .nav__menu-item.has-submenu:not(:first-child)::after {
         content: '\f078';
         margin-left: 8px;
         font-family: "Font Awesome 6 Pro";
@@ -1528,13 +1524,21 @@ textarea {
 }
 
 @media (min-width: 1400px) {
-    .nav__menu-item.has-submenu::after {
+    .nav__menu-item.has-submenu:not(:first-child)::after {
         font-size: 18px
     }
 }
 
-.nav__menu-item:hover *,.nav__menu-item:hover::before,.nav__menu-item:hover::after {
-    color: #E6332A
+@media (min-width: 1024px) {
+    .nav__menu-item:hover *,.nav__menu-item:hover::before,.nav__menu-item:hover::after {
+        color: #E6332A
+    }
+}
+
+@media (max-width: 1023px) {
+    .nav__menu-link {
+        display: none
+    }
 }
 
 @media (min-width: 1024px) {

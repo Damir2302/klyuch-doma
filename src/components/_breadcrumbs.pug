@@ -1,22 +1,82 @@
-mixin breadcrumbs(...items)
+mixin breadcrumbs(title, ...items)
 
-    .breadcrumbs
+    .page-head
 
         .container
 
-            .breadcrumbs-wrapper
+            .breadcrumbs
 
-                .breadcrumbs-item
-                    a(href='/') Главная
+                .breadcrumbs-wrapper
 
-                each item in items
+                    .breadcrumbs-item
+                        a(href='/') Главная
 
-                    if item == items[items.length - 1]
-                        span.breadcrumbs-separator /
-                        .breadcrumbs-item
-                            span= item
+                    each item in items
 
-                    else
-                        span.breadcrumbs-separator
-                        .breadcrumbs-item
-                            a(href="#")= item
+                        if item == items[items.length - 1]
+                            span.breadcrumbs-separator /
+                            .breadcrumbs-item
+                                span= item
+
+                        else
+                            span.breadcrumbs-separator /
+                            .breadcrumbs-item
+                                a(href="#")= item
+
+            if page == 'cat-inner'
+
+                .cat-inner__hero
+
+                    .cat-inner__hero-desc
+
+                        h1.cat-inner__hero-title= title
+
+                        .cat-inner__levels
+
+                            .cat-inner__level-item
+                                p Устойчивость в влаге
+                                .cat-inner__level-value
+                                    span
+                                    span
+                                    span
+                                    span
+                                    span
+
+                            .cat-inner__level-item
+                                p Устойчивость к морозам
+                                .cat-inner__level-value
+                                    span
+                                    span
+                                    span
+                                    span
+                                    span
+
+                            .cat-inner__level-item
+                                p Надежность
+                                .cat-inner__level-value
+                                    span
+                                    span
+                                    span
+                                    span
+                                    span
+
+                            .cat-inner__level-item
+                                p Стоимость строительства
+                                .cat-inner__level-value
+                                    span
+                                    span
+                                    span
+                                    span
+                                    span
+
+                        .cat-inner__hero-bottom
+                            a.button-style.button-style--red Перейти в каталог
+                            .label-style.label-style--red от 2,1 млн руб.
+                            .label-style.label-style--black 21 вариант
+
+                    .cat-inner__hero-image
+                        img(src="assets/images/house-frame.png", alt="img")
+
+            else
+
+                h1.s-title= title

@@ -1,25 +1,3 @@
-.news {
-    margin-top: 20px;
-    margin-bottom: 60px;
-
-    @include breakpoint(md) {
-        margin-top: 0;
-        margin-bottom: 80px;
-    }
-
-    @include breakpoint(lg) {
-        margin-bottom: 100px;
-    }
-
-    @include breakpoint(xl) {
-        margin-bottom: 120px;
-    }
-
-    @include breakpoint(hd) {
-        margin-bottom: 150px;
-    }
-}
-
 .news__items {
     display: flex;
     flex-wrap: wrap;

@@ -11,6 +11,24 @@ $(document).ready(function() {
         $('.header__nav').removeClass('mobile-menu');
     })
 
+    // MENU DESKTOP
+    $('#menu').on('click', function(e) {
+        if ($(window).width() >= 1024 && e.target.className == 'nav__menu-link') {
+            $(this).addClass('active')
+            $('body').addClass('overflow-hidden')
+        } else if (e.target.className == 'close-popup-menu') {
+            $(this).removeClass('active')
+            $('body').removeClass('overflow-hidden')
+        }
+    })
+
+    $('html').on('click', function(e) {
+        if (!$(e.target).closest('#menu').length) {
+            $('#menu').removeClass('active')
+            $('body').removeClass('overflow-hidden')
+        }
+    })
+
     // VIDEO на главной
     $('.video-play').on('click', function() {
         $(this).parent().addClass('play')
