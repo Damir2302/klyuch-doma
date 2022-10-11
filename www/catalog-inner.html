@@ -119,23 +119,24 @@
                     </div>
                     <div class="cat-inner__hero">
                         <div class="cat-inner__hero-desc">
+                            <div class="cat-inner-bg"><img src="assets/images/star.png" alt="img"></div>
                             <h1 class="cat-inner__hero-title">Каркасные дома</h1>
                             <div class="cat-inner__levels">
                                 <div class="cat-inner__level-item">
                                     <p>Устойчивость в влаге</p>
-                                    <div class="cat-inner__level-value"><span></span><span></span><span></span><span></span><span></span></div>
+                                    <div class="cat-inner__level-value"><span class="active"></span><span class="active"></span><span></span><span></span><span></span></div>
                                 </div>
                                 <div class="cat-inner__level-item">
                                     <p>Устойчивость к морозам</p>
-                                    <div class="cat-inner__level-value"><span></span><span></span><span></span><span></span><span></span></div>
+                                    <div class="cat-inner__level-value"><span class="active"></span><span class="active"></span><span class="active"></span><span></span><span></span></div>
                                 </div>
                                 <div class="cat-inner__level-item">
                                     <p>Надежность</p>
-                                    <div class="cat-inner__level-value"><span></span><span></span><span></span><span></span><span></span></div>
+                                    <div class="cat-inner__level-value"><span class="active"></span><span class="active"></span><span class="active"></span><span></span><span></span></div>
                                 </div>
                                 <div class="cat-inner__level-item">
                                     <p>Стоимость строительства</p>
-                                    <div class="cat-inner__level-value"><span></span><span></span><span></span><span></span><span></span></div>
+                                    <div class="cat-inner__level-value"><span class="active"></span><span></span><span></span><span></span><span></span></div>
                                 </div>
                             </div>
                             <div class="cat-inner__hero-bottom"><a class="button-style button-style--red">Перейти в каталог</a>
@@ -143,12 +144,20 @@
                                 <div class="label-style label-style--black">21 вариант</div>
                             </div>
                         </div>
-                        <div class="cat-inner__hero-image"><img src="assets/images/house-frame.png" alt="img"></div>
+                        <div class="cat-inner__hero-image">
+                            <picture>
+                                <source media="(min-width: 1920px)" srcset="assets/images/house-frame-1920.png">
+                                <source media="(min-width: 1400px)" srcset="assets/images/house-frame-1400.png">
+                                <source media="(min-width: 1024px)" srcset="assets/images/house-frame-1024.png">
+                                <source media="(min-width: 744px)" srcset="assets/images/house-frame-744.png"><img src="assets/images/house-frame-320.png" alt="img">
+                            </picture>
+                        </div>
                     </div>
                 </div>
             </div>
             <section class="catalog">
                 <div class="container">
+                    <h2 class="s-title">Каталог</h2>
                     <div class="catalog__inner">
                         <div class="catalog__item"><a href="#">
                                 <div class="catalog__item-image"><img src="assets/images/img-4.jpg" alt="img"></div>
@@ -186,27 +195,27 @@
             <div class="catalog__blog">
                 <div class="container">
                     <h2 class="s-title">Полезные материалы</h2>
-                    <div class="news__items">
-                        <div class="news__item">
-                            <div class="news__item-img"><img src="assets/images/news-item.png" alt=""></div>
-                            <div class="news__item-content">
-                                <div class="news__item-title">Дом для постоянного проживания - о чем нужно знать</div>
-                                <div class="news__item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem hendrerit ultrices etiam nunc tellus elementum.</div>
+                    <div class="cat__wrapper">
+                        <div class="cat__item">
+                            <div class="cat__item-img"><img src="assets/images/news-item.png" alt=""></div>
+                            <div class="cat__item-content">
+                                <div class="cat__item-title">Дом для постоянного проживания - о чем нужно знать</div>
+                                <div class="cat__item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem hendrerit ultrices etiam nunc tellus elementum.</div>
                             </div>
                         </div>
-                    </div>
-                    <div class="news__item">
-                        <div class="news__item-img"><img src="assets/images/news-item.png" alt=""></div>
-                        <div class="news__item-content">
-                            <div class="news__item-title">Дом для постоянного проживания - о чем нужно знать</div>
-                            <div class="news__item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem hendrerit ultrices etiam nunc tellus elementum.</div>
+                        <div class="cat__item">
+                            <div class="cat__item-img"><img src="assets/images/news-item.png" alt=""></div>
+                            <div class="cat__item-content">
+                                <div class="cat__item-title">Дом для постоянного проживания - о чем нужно знать</div>
+                                <div class="cat__item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem hendrerit ultrices etiam nunc tellus elementum.</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="news__item">
-                        <div class="news__item-img"><img src="assets/images/news-item.png" alt=""></div>
-                        <div class="news__item-content">
-                            <div class="news__item-title">Дом для постоянного проживания - о чем нужно знать</div>
-                            <div class="news__item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem hendrerit ultrices etiam nunc tellus elementum.</div>
+                        <div class="cat__item">
+                            <div class="cat__item-img"><img src="assets/images/news-item.png" alt=""></div>
+                            <div class="cat__item-content">
+                                <div class="cat__item-title">Дом для постоянного проживания - о чем нужно знать</div>
+                                <div class="cat__item-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem hendrerit ultrices etiam nunc tellus elementum.</div>
+                            </div>
                         </div>
                     </div>
                 </div>

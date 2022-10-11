@@ -1,0 +1,224 @@
+.cat-inner-page .page-head {
+    padding: 30px 0;
+    background: $gray6;
+}
+
+.cat-inner-page .breadcrumbs {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1920px;
+
+    @include breakpoint(lg) {
+        padding: 0 40px;
+    }
+
+    @include breakpoint(xl) {
+        padding: 0 100px;
+    }
+}
+
+.cat-inner__hero-desc {
+
+    @include breakpoint(md) {
+        position: relative;
+    }
+}
+
+.cat-inner-bg {
+    display: none;
+
+    @include breakpoint(md) {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+    }
+}
+
+.cat-inner__hero-title {
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: $black;
+
+    @include breakpoint(md) {
+        margin-bottom: 20px;
+        font-size: 45px;
+    }
+
+    @include breakpoint(lg) {
+        margin-bottom: 40px;
+    }
+
+    @include breakpoint(hd) {
+        margin-bottom: 20px;
+        font-size: 60px;
+    }
+}
+
+.cat-inner__levels {
+
+    @include breakpoint(md) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.cat-inner__level-item {
+    margin-bottom: 15px;
+}
+
+.cat-inner__level-item p {
+    margin-bottom: 8px;
+    font-size: 20px;
+    line-height: 150%;
+    color: $black;
+}
+
+.cat-inner__level-value span {
+    margin-right: 12px;
+    background: #FFB4B0;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.cat-inner__level-value span.active {
+    background: $red;
+}
+
+.cat-inner__hero-bottom {
+    margin: 35px 0;
+}
+
+.cat-inner__hero-bottom .button-style {
+    margin-bottom: 30px;
+    padding: 20px 51px;
+}
+
+.cat-inner__hero-bottom .label-style {
+    margin-bottom: 18px;
+}
+
+.cat-inner__hero .label-style {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.catalog__blog {
+    padding: 60px 0;
+    background: $gray6;
+
+    @include breakpoint(md) {
+        padding: 80px 0;
+    }
+
+    @include breakpoint(lg) {
+        padding: 100px 0;
+    }
+
+    @include breakpoint(xl) {
+        padding: 120px 0;
+    }
+
+    @include breakpoint(hd) {
+        padding: 150px 0;
+    }
+}
+
+.cat__wrapper {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+
+    @include breakpoint(xl) {
+        margin-top: 50px;
+    }
+
+    @include breakpoint(hd) {
+        margin-top: 60px;
+    }
+}
+
+.cat__item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+
+    @include breakpoint(md) {
+        margin-right: 20px;
+        margin-top: 20px;
+        margin-bottom: 0;
+        width: calc((100% - 60px) / 3);
+    }
+
+    @include breakpoint(lg) {
+        margin-right: 30px;
+        margin-top: 25px;
+        width: calc((100% - 90px) / 3);
+    }
+
+    @include breakpoint(xl) {
+        margin-right: 40px;
+        width: calc((100% - 120px) / 3);
+    }
+
+    @include breakpoint(hd) {
+        margin-top: 40px;
+    }
+}
+
+.cat__item-img {
+    margin-bottom: 20px;
+    height: calc((100vw - 40px) / 1.333);
+    overflow: hidden;
+
+    @include breakpoint(md) {
+        height: calc(((100vw / 3) - 28px) / 1.333);
+    }
+
+    @include breakpoint(lg) {
+        height: calc(((100vw / 3) - 48px) / 1.34);
+    }
+
+    @include breakpoint(xl) {
+        height: calc(((100vw / 3) - 95px) / 1.34);
+    }
+
+    @include breakpoint(hd) {
+        height: 407px;
+    }
+}
+
+.cat__item-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 140%;
+    color: $black;
+    margin-bottom: 12px;
+    @include textLimit(3);
+
+    @include breakpoint(hd) {
+        @include textLimit(2);
+    }
+}
+
+.cat__item-desc {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #252527;
+    @include textLimit(2);
+
+    @include breakpoint(md) {
+        @include textLimit(3);
+    }
+}
