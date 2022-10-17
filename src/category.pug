@@ -1,0 +1,169 @@
+---
+title: Klyuch 585 | Дом из клееного бруса «Эдем»
+bodyClass: category-page
+---
+
+extends includes/_page
+
+block main
+
+    include includes/_mixins
+
+    include components/_breadcrumbs
+    +breadcrumbs('Дом из клееного бруса «Эдем»', 'Каталог', 'Каркасные дома', 'Дом из клееного бруса «Эдем»')
+
+    section.category
+
+        .category-hero
+
+            .cat-hero__info
+
+                .container
+
+                    .cat-hero__info-wrapper
+
+                        .cat-hero__info-wrap
+
+                            div
+                                .label-style.label-style--blue 5 940 000 ₽
+                            div
+                                .label-style.label-style--gray 8,5 х 10,5м
+                            div
+                                .label-style.label-style--gray 126м²
+
+                        a.cat-hero__link(href="#")
+                            span Подробнее о доме
+
+            .cat-hero__image
+                img(src="assets/images/image-64.jpg", alt="img")
+
+        .category-info
+
+            .info-nav
+
+                .swiper.info__nav
+
+                    .swiper-wrapper
+
+                        .swiper-slide.info__nav-item
+                            a(href="#scheme") Планировка
+                        .swiper-slide.info__nav-item
+                            a(href="#description") Описание
+                        .swiper-slide.info__nav-item
+                            a(href="#equipment") Комплектация
+                        .swiper-slide.info__nav-item
+                            a(href="#project") Проект
+                        .swiper-slide.info__nav-item
+                            a(href="#") Построенные объекты
+                        .swiper-slide.info__nav-item
+                            a(href="#") Цены
+
+            .info-scheme#scheme
+
+                .container
+
+                    h2.s-title Рекомендуемая планировка
+
+                    .scheme
+
+                        .scheme__image
+                            img(src="assets/images/image-65.png", alt="img")
+
+                        .scheme__image
+                            img(src="assets/images/image-66.png", alt="img")
+
+            .info-description#description
+
+                .container
+
+                    h2.s-title Дом из клееного бруса «Эдем»  —  проект большого дома с мансардой.
+
+                    .desc
+
+                        .desc__info
+                            p.desc__text Прекрасный вариант для небольшой семьи, которая любит уют и комфорт. Здесь хватит места каждому члену семьи. Большим преимуществом дома является большая кухня-гостиная и наличие большой террасы. В любое время года есть место для общего времяпрепровождения. Много места для хранения вещей на втором этаже, но вы можете поменять планировку под себя.
+
+                        .desc__image
+                            img(src="assets/images/home-1.png", alt="img")
+
+            .info-equipment#equipment
+
+                .container
+
+                    h2.s-title Этот же дом в&nbsp;другом исполнении
+
+                    .equipment
+
+                        .equipment__block
+                            .equipment__block-icon
+                                +sprite('equip-1')
+                            .equipment__block-title Каркасный
+                            a(href="#").equipment__block-btn.button-style.button-style--red Выбрать
+
+                        .equipment__block
+                            .equipment__block-icon
+                                +sprite('equip-2')
+                            .equipment__block-title Клееный
+                            a(href="#").equipment__block-btn.button-style.button-style--red Выбрать
+
+                        .equipment__block
+                            .equipment__block-icon
+                                +sprite('equip-3')
+                            .equipment__block-title Двойной брус
+                            a(href="#").equipment__block-btn.button-style.button-style--red Выбрать
+
+            .info-project#project
+
+                .container
+
+                    h2.s-title Дом под ключ VS домокомплект VS тёплый контур
+
+                    .project
+
+                        .p-table
+
+                            .p-table-row.p-table-head
+                                .p-cell
+                                .p-cell Дом под ключ
+                                .p-cell Теплый контур
+                                .p-cell Домкомплект
+
+                            .p-table-row
+                                .p-cell.p-cell-head Сроки
+                                .p-cell до 100 дней.
+                                .p-cell до 100 дней.
+                                .p-cell Может затянуться на годы.
+
+                            .p-table-row
+                                .p-cell.p-cell-head Цена
+                                .p-cell Фиксируется договором.
+                                .p-cell Фиксируется договором.
+                                .p-cell Непредсказуемая, постоянно требует вложений.
+
+                            .p-table-row
+                                .p-cell.p-cell-head Качество
+                                .p-cell Дом собирается в теплых, контролируемых условиях цеха, что гарантирует герметичность и долговечность конструкций.
+                                .p-cell Дом собирается в теплых, контролируемых условиях цеха, что гарантирует герметичность и долговечность конструкций.
+                                .p-cell Непредсказуемые погодные условия могут повлиять на материалы и качество строительства.
+
+                            .p-table-row
+                                .p-cell.p-cell-head Аккуратность
+                                .p-cell Модули устанавливаются на фундамент с помощью крана. Последующие этапы монтажа не предполагают стройки, грязи и работы тяжёлой техник.
+                                .p-cell Модули устанавливаются на фундамент с помощью крана. Последующие этапы монтажа не предполагают стройки, грязи и работы тяжёлой техник.
+                                .p-cell На участке грязь, мусор, строительные отходы.
+
+                            .p-table-row
+                                .p-cell.p-cell-head Надёжность
+                                .p-cell Применяемые решения испытаны в эксплуатации. Есть гарантия.
+                                .p-cell Применяемые решения испытаны в эксплуатации. Есть гарантия.
+                                .p-cell Могут появляться неучтенные моменты: собираться конденсат, дуть из щелей, потечь крыша, намокать стены.
+
+            .project-file
+
+                .container
+                    .p-file-bg
+                        img(src="assets/images/star.svg", alt="bg")
+
+                    h2.s-title Скачать этот проект бесплатно .pdf
+
+                    a.button-style.button-style--red Скачать проект

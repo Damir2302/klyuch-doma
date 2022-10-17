@@ -16,4 +16,9 @@ $(document).ready(function() {
         }
     })
 
+    let infoNav = new Swiper('.info__nav', {
+        slidesPerView: 'auto',
+        freeMode: true
+    })
+
 });

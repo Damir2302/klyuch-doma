@@ -124,11 +124,13 @@
 
     @include breakpoint(xl) {
         padding: 60px 100px 75px 130px;
+        top: 163px;
     }
 
     @include breakpoint(hd) {
         padding: 70px 100px 100px 130px;
         justify-content: unset;
+        top: 174px;
     }
 }
 
