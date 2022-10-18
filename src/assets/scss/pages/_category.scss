@@ -491,7 +491,7 @@
     max-width: 615px;
 
     @include breakpoint(lg) {
-        max-width: 798px;
+        max-width: 1030px;
     }
 }
 
@@ -585,6 +585,19 @@
 
     @include breakpoint(md) {
         position: absolute;
+        right: 0;
+        width: 217px;
+        opacity: 0.5;
+    }
+
+    @include breakpoint(lg) {
+        top: -55px;
+        right: 30%;
+    }
+
+    @include breakpoint(xl) {
+        top: -85px;
+        right: 23%;
     }
 }
 
@@ -593,6 +606,24 @@
 
     @include breakpoint(md) {
         max-width: 544px;
+    }
+
+    @include breakpoint(lg) {
+        margin: 0;
+        position: relative;
+    }
+
+    @include breakpoint(xl) {
+        max-width: unset;
+    }
+}
+
+.project-file__wrap {
+
+    @include breakpoint(lg) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 }
 
@@ -603,5 +634,175 @@
     @include breakpoint(md) {
         padding: 20px 80px;
         max-width: 307px;
+    }
+
+    @include breakpoint(lg) {
+        position: relative;
+    }
+
+    @include breakpoint(xl) {
+        padding: 16px 54px;
+        max-width: 255px;
+    }
+}
+
+.category-accomp {
+    margin-top: 60px;
+    padding: 0;
+    background: none;
+
+    @include breakpoint(md) {
+        margin-top: 80px;
+        max-width: 704px;
+    }
+
+    @include breakpoint(lg) {
+        margin-top: 100px;
+        max-width: 1024px;
+    }
+
+    @include breakpoint(xl) {
+        margin-top: 120px;
+        max-width: 1400px;
+    }
+
+    @include breakpoint(hd) {
+        margin-top: 150px;
+        max-width: 1920px;
+    }
+}
+
+.category-accomp .s-title {
+    margin-bottom: 45px;
+
+    @include breakpoint(md) {
+        max-width: unset;
+        text-align: left;
+    }
+
+    @include breakpoint(xl) {
+        margin-bottom: 85px;
+    }
+}
+
+.category-accomp .accomp__item {
+
+    @include breakpoint(md) {
+        text-align: left;
+    }
+
+    @include breakpoint(lg) {
+        width: calc((100% - 30px) / 4);
+    }
+}
+
+.category-accomp .accomp__item ~ .accomp__item::after {
+
+    @include breakpoint(md) {
+        right: calc(100% + 38px);
+    }
+
+    @include breakpoint(xl) {
+        right: calc(100% + 30px);
+    }
+
+    @include breakpoint(hd) {
+        right: calc(100% + 90px);
+    }
+}
+
+.accomp__item:nth-child(4)::after {
+
+    @include breakpoint(lg) {
+        content: '';
+    }
+}
+
+.accomp__item:nth-child(5)::after {
+
+    @include breakpoint(xl) {
+        content: none;
+    }
+}
+
+.accomp__item:nth-child(6)::after {
+
+    @include breakpoint(lg) {
+        right: calc(100% + 86px)!important;
+    }
+
+    @include breakpoint(xl) {
+        right: calc(100% + 100px)!important;
+    }
+
+    @include breakpoint(hd) {
+        right: calc(100% + 200px)!important;
+    }
+}
+
+.accomp__item:nth-child(7)::after {
+
+    @include breakpoint(lg) {
+        right: calc(100% + 86px)!important;
+    }
+
+    @include breakpoint(xl) {
+        right: calc(100% + 100px)!important;
+    }
+
+    @include breakpoint(hd) {
+        right: calc(100% + 200px)!important;
+    }
+}
+
+.category-accomp .accomp__item h4 {
+
+    @include breakpoint(md) {
+        margin-left: 20px;
+    }
+
+    @include breakpoint(xl) {
+        margin-left: 30px;
+    }
+}
+
+.category-accomp .accomp__item h4::before {
+
+    @include breakpoint(md) {
+        left: -20px;
+    }
+
+    @include breakpoint(xl) {
+        left: -30px;
+    }
+}
+
+.category-accomp .accomp__item p {
+
+    @include breakpoint(md) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    @include breakpoint(xl) {
+        max-width: 270px;
+    }
+
+    @include breakpoint(hd) {
+        max-width: 400px;
+    }
+}
+
+.category-accomp .accomp__item span {
+    display: inline-block;
+    max-width: 375px;
+
+    @include breakpoint(md) {
+        margin-top: 8px;
+    }
+
+    @include breakpoint(xl) {
+        margin-top: 16px;
+        font-size: 20px;
     }
 }

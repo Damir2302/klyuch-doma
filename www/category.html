@@ -252,8 +252,45 @@
                     </div>
                     <div class="project-file">
                         <div class="container">
-                            <div class="p-file-bg"><img src="assets/images/star.svg" alt="bg"></div>
-                            <h2 class="s-title">Скачать этот проект бесплатно .pdf</h2><a class="button-style button-style--red">Скачать проект</a>
+                            <div class="p-file-bg"><img src="assets/images/star.png" alt="bg"></div>
+                            <div class="project-file__wrap">
+                                <h2 class="s-title">Скачать этот проект бесплатно .pdf</h2><a class="button-style button-style--red" id="project-dwld">Скачать проект</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-accomp accompaniment">
+                        <div class="container">
+                            <h2 class="s-title">7 шагов к вашему дому</h2>
+                            <div class="accomp__inner">
+                                <div class="accomp__item">
+                                    <h4>01</h4>
+                                    <p>Визит на выставочную площадку</p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet donec cursus eu.</span>
+                                </div>
+                                <div class="accomp__item">
+                                    <h4>02</h4>
+                                    <p>Заключение договора</p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet donec cursus eu.</span>
+                                </div>
+                                <div class="accomp__item">
+                                    <h4>03</h4>
+                                    <p>Производство</p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet donec cursus eu.</span>
+                                </div>
+                                <div class="accomp__item">
+                                    <h4>04</h4>
+                                    <p>Доставка/логистика</p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet donec cursus eu.</span>
+                                </div>
+                                <div class="accomp__item">
+                                    <h4>05</h4>
+                                    <p>Строительство</p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet donec cursus eu.</span>
+                                </div>
+                                <div class="accomp__item">
+                                    <h4>06</h4>
+                                    <p>Сдача</p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet donec cursus eu.</span>
+                                </div>
+                                <div class="accomp__item">
+                                    <h4>07</h4>
+                                    <p>Гарантия и обслуживание</p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet donec cursus eu.</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -356,10 +393,36 @@
         </footer>
         <!-- Footer::End-->
     </div>
+    <!-- Popup::Start-->
+    <div class="popup">
+        <div class="popup__inner animate__animated animate__fadeInDown">
+            <div class="popup-close" id="popup-close"></div>
+            <div class="project-dwld-popup">
+                <h3 class="project-dwld-title">Заполните форму, чтобы Скачать этот проект бесплатно .pdf</h3>
+                <form>
+                    <div class="input-style">
+                        <input type="text" placeholder="Имя">
+                    </div>
+                    <div class="input-style">
+                        <input type="text" placeholder="Телефон">
+                    </div>
+                    <div class="input-style">
+                        <input type="email" placeholder="Почта">
+                    </div>
+                    <div class="project-dwld-bottom">
+                        <input class="button-style button-style--red" type="submit" value="Отправить">
+                        <div class="dwld-form-agreement"><span>Согласен(на) на <a href="#">обработку персональных данных</a></span></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Popup::End-->
     <!-- Scripts::Start-->
     <script src="assets/js/plugins/plugins.min.js"></script>
     <script src="assets/js/sliders.js"></script>
     <script src="assets/js/map.js"></script>
+    <script src="assets/js/popup.js"></script>
     <script src="assets/js/main.js"></script>
     <!-- Scripts::End-->
 </body>

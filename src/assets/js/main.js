@@ -22,13 +22,6 @@ $(document).ready(function() {
         }
     })
 
-    $('html').on('click', function(e) {
-        if (!$(e.target).closest('#menu').length) {
-            $('#menu').removeClass('active')
-            $('body').removeClass('overflow-hidden')
-        }
-    })
-
     // VIDEO на главной
     $('.video-play').on('click', function() {
         $(this).parent().addClass('play')

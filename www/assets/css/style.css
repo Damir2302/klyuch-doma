@@ -6806,3 +6806,169 @@ section {
 .equipment__block-btn {
     padding: 16px 54px
 }
+
+.info-project {
+    padding: 60px 0 75px;
+    overflow-x: scroll
+}
+
+@media (min-width: 744px) {
+    .info-project {
+        padding: 80px 0
+    }
+}
+
+@media (min-width: 1024px) {
+    .info-project {
+        padding: 100px 0;
+        overflow: hidden
+    }
+}
+
+@media (min-width: 1400px) {
+    .info-project {
+        padding: 120px 0
+    }
+}
+
+.info-project .s-title {
+    max-width: 615px
+}
+
+@media (min-width: 1024px) {
+    .info-project .s-title {
+        max-width: 798px
+    }
+}
+
+.p-table {
+    min-width: 704px
+}
+
+.p-table-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-bottom: 1px solid #BDBDBD
+}
+
+.p-cell {
+    padding: 20px 16px;
+    min-width: calc(25% + 9.5px);
+    max-width: calc(25% + 9.5px);
+    font-size: 16px;
+    line-height: 150%;
+    color: #252527
+}
+
+@media (min-width: 1400px) {
+    .p-cell {
+        padding: 20px;
+        min-width: calc(25% + 10px);
+        max-width: calc(25% + 10px);
+        font-size: 20px
+    }
+}
+
+@media (min-width: 1920px) {
+    .p-cell {
+        padding: 20px 40px
+    }
+}
+
+.p-cell:first-child {
+    min-width: calc(25% - 14px);
+    max-width: calc(25% - 14px)
+}
+
+@media (min-width: 1400px) {
+    .p-cell:first-child {
+        min-width: 270px;
+        max-width: 270px
+    }
+}
+
+.p-table-head .p-cell {
+    padding: 28px 16px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: #252527
+}
+
+@media (min-width: 1400px) {
+    .p-table-head .p-cell {
+        padding: 25px 20px;
+        font-size: 20px
+    }
+}
+
+@media (min-width: 1920px) {
+    .p-table-head .p-cell {
+        padding: 20px 40px
+    }
+}
+
+.p-cell-head {
+    padding: 20px 0;
+    font-weight: 700
+}
+
+.p-cell:nth-child(2) {
+    background: #E3E9F6
+}
+
+.p-cell:nth-child(3) {
+    background: #F2F2F2
+}
+
+.project-file {
+    padding: 50px 0;
+    background: #F2F2F2
+}
+
+@media (min-width: 1024px) {
+    .project-file {
+        padding: 56px 0 62px
+    }
+}
+
+@media (min-width: 1400px) {
+    .project-file {
+        padding: 84px 0 86px
+    }
+}
+
+@media (max-width: 743px) {
+    .p-file-bg {
+        display: none
+    }
+}
+
+@media (min-width: 744px) {
+    .p-file-bg {
+        position: absolute
+    }
+}
+
+.project-file .s-title {
+    max-width: 360px
+}
+
+@media (min-width: 744px) {
+    .project-file .s-title {
+        max-width: 544px
+    }
+}
+
+.project-file .button-style {
+    padding: 20px 66px;
+    max-width: 280px
+}
+
+@media (min-width: 744px) {
+    .project-file .button-style {
+        padding: 20px 80px;
+        max-width: 307px
+    }
+}
