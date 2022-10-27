@@ -806,3 +806,95 @@
         font-size: 20px;
     }
 }
+
+.finished-objects {
+
+    @include breakpointMax(md) {
+        margin-top: 60px;
+    }
+}
+
+.finished-objects  .s-title {
+
+    @include breakpoint(md) {
+        max-width: 342px;
+    }
+
+    @include breakpoint(lg) {
+        max-width: unset;
+    }
+}
+
+.f-objects-slider {
+    padding-bottom: 50px;
+
+    @include breakpoint(md) {
+        position: static;
+    }
+}
+
+.objects-slider__img {
+    width: 100%;
+    height: calc((100vw - 40px) / 1.352);
+
+    @include breakpoint(md) {
+        height: calc((50vw - 30px) / 1.352);
+    }
+
+    @include breakpoint(lg) {
+        height: calc(((100vw / 3) - 30px) / 1.352);
+    }
+
+    @include breakpoint(xl) {
+        height: calc(((100vw / 3) - 86.666px) / 1.352);
+    }
+
+    @include breakpoint(hd) {
+        width: 547px;
+        height: 407px;
+    }
+}
+
+.objects-slider__title {
+    margin-top: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    @include textLimit(2);
+
+    @include breakpoint(md) {
+        margin-top: 25px;
+        font-size: 20px;
+        @include textLimit(3);
+    }
+
+    @include breakpoint(xl) {
+        font-size: 30px;
+        line-height: 140%;
+    }
+}
+
+.objects-slider-pagination {
+
+    @include breakpoint(md) {
+        display: none;
+    }
+}
+
+.objects-slider-buttons {
+
+    @include breakpointMax(md) {
+        display: none;
+    }
+
+    @include breakpoint(md) {
+        right: 20px;
+    }
+
+    @include breakpoint(lg) {
+        right: 40px;
+    }
+
+    @include breakpoint(xl) {
+        right: 100px;
+    }
+}

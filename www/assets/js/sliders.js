@@ -6,7 +6,7 @@ $(document).ready(function() {
         effect: 'fade',
 
         pagination: {
-            el: '.swiper-pagination',
+            el: '.hero-slider-pagination',
             clickable: true
           },
 
@@ -19,6 +19,33 @@ $(document).ready(function() {
     let infoNav = new Swiper('.info__nav', {
         slidesPerView: 'auto',
         freeMode: true
+    })
+
+    let objectsSlider = new Swiper('.f-objects-slider', {
+        slidesPerView: 1,
+        spaceBetween: 50,
+
+        breakpoints: {
+            744: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+            },
+
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            }
+        },
+
+        pagination: {
+            el: '.objects-slider-pagination',
+            clickable: true
+          },
+
+        navigation: {
+            nextEl: '.objects-slider-buttons .button-next',
+            prevEl: '.objects-slider-buttons .button-prev',
+        }
     })
 
 });

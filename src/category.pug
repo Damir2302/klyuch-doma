@@ -54,9 +54,9 @@ block main
                         .swiper-slide.info__nav-item
                             a(href="#project") Проект
                         .swiper-slide.info__nav-item
-                            a(href="#") Построенные объекты
+                            a(href="#finished") Построенные объекты
                         .swiper-slide.info__nav-item
-                            a(href="#") Цены
+                            a(href="#price") Цены
 
             .info-scheme#scheme
 
@@ -205,3 +205,80 @@ block main
                             h4 07
                             p Гарантия и обслуживание
                             span Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet donec cursus eu.
+
+            .finished-objects#finished
+
+                .container
+
+                    h2.s-title Построенные проекты
+
+                    .swiper.f-objects-slider
+
+                        .swiper-wrapper
+
+                            .swiper-slide.objects-slider__item
+                                .objects-slider__img
+                                    img(src="assets/images/image-59.jpg", alt="img")
+                                p.objects-slider__title Дом из клееного бруса «Антолла»
+
+                            .swiper-slide.objects-slider__item
+                                .objects-slider__img
+                                    img(src="assets/images/image-60.jpg", alt="img")
+                                p.objects-slider__title Дом из клееного бруса по индивидуальному проекту
+
+                            .swiper-slide.objects-slider__item
+                                .objects-slider__img
+                                    img(src="assets/images/image-61.jpg", alt="img")
+                                p.objects-slider__title Каркасный дом по индивидуальному проекту
+
+                            .swiper-slide.objects-slider__item
+                                .objects-slider__img
+                                    img(src="assets/images/image-59.jpg", alt="img")
+                                p.objects-slider__title Дом из клееного бруса «Антолла»
+
+                            .swiper-slide.objects-slider__item
+                                .objects-slider__img
+                                    img(src="assets/images/image-60.jpg", alt="img")
+                                p.objects-slider__title Дом из клееного бруса по индивидуальному проекту
+
+                            .swiper-slide.objects-slider__item
+                                .objects-slider__img
+                                    img(src="assets/images/image-61.jpg", alt="img")
+                                p.objects-slider__title Каркасный дом по индивидуальному проекту
+
+                        .objects-slider-pagination.swiper-pagination
+
+                        .objects-slider-buttons.slider-buttons
+                            .slider-button.button-prev
+                                i.far.fa-chevron-left
+                            .slider-button.button-next
+                                i.far.fa-chevron-right
+
+            .category-price#price
+
+                .container
+
+                    h2.s-title Цены
+
+                    .c-price__block
+
+                        .c-price__item
+                            h4.c-price__item-title цена домокомплекта
+                            p.c-price__item-desc Какое-то короткое описание, поясняющее в чём заключается предложение и его особенности, отличие от других предложений
+                            a.c-price__item-spec Посмотреть спецификацию
+                            p.c-price__item-price от 5 940 000 ₽
+                            a.button-style.button-style--red Рассчитать смету
+
+                        .c-price__item
+                            h4.c-price__item-title “ТЕПЛЫЙ КОНТУР”
+                            p.c-price__item-desc Какое-то короткое описание, поясняющее в чём заключается предложение и его особенности, отличие от других предложений
+                            a.c-price__item-spec Посмотреть спецификацию
+                            p.c-price__item-price от 8 940 000 ₽
+                            a.button-style.button-style--red Рассчитать смету
+
+                        .c-price__item
+                            h4.c-price__item-title цена Под ключ
+                            p.c-price__item-desc Какое-то короткое описание, поясняющее в чём заключается предложение и его особенности, отличие от других предложений
+                            a.c-price__item-spec Посмотреть спецификацию
+                            p.c-price__item-price от 10 000 ₽
+                            a.button-style.button-style--red Рассчитать смету

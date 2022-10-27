@@ -241,3 +241,117 @@ section {
     background: $gray6;
     color: $black;
 }
+
+.swiper-pagination {
+    bottom: 0!important;
+
+    @include breakpoint(md) {
+        top: 215px!important;
+        left: unset!important;
+        right: 5px!important;
+        bottom: unset!important;
+        width: auto!important;
+    }
+
+    @include breakpoint(lg) {
+        top: 160px!important;
+    }
+
+    @include breakpoint(xl) {
+        top: unset!important;
+        bottom: 0!important;
+    }
+}
+
+.swiper-pagination span {
+    position: relative;
+    background: $red!important;
+    width: 10px!important;
+    height: 10px!important;
+    opacity: 1!important;
+
+    @include breakpoint(md) {
+        margin: 0!important;
+        display: block;
+    }
+
+    @include breakpoint(xl) {
+        display: inline-block;
+    }
+}
+
+.swiper-pagination span ~ .swiper-pagination-bullet {
+    margin-left: 16px!important;
+
+    @include breakpoint(md) {
+        margin: 0!important;
+        margin-top: 16px!important;
+    }
+
+    @include breakpoint(xl) {
+        margin-left: 16px!important;
+    }
+}
+
+.swiper-pagination span.swiper-pagination-bullet-active::after {
+    content: '';
+    background: $red;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 20px;
+    height: 20px;
+    opacity: 0.2;
+    border-radius: 50%;
+}
+
+.slider-buttons {
+    display: none;
+
+    @include breakpoint(md) {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        color: $black;
+        z-index: 1;
+    }
+
+    @include breakpoint(lg) {
+        top: 16px;
+    }
+
+    @include breakpoint(xl) {
+        top: 0;
+    }
+}
+
+.slider-button {
+
+    @include breakpoint(md) {
+        background: $blue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        color: #fff;
+        cursor: pointer;
+    }
+}
+
+.slider-button ~ .slider-button {
+
+    @include breakpoint(md) {
+        margin-left: 16px;
+    }
+}
+
+.slider-button.swiper-button-disabled {
+
+    @include breakpoint(md) {
+        background: $gray5;
+        color: $gray4;
+        cursor: default;
+    }
+}
