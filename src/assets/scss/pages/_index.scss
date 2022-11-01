@@ -1284,9 +1284,12 @@
 }
 
 .form-bg {
+    background: url('../images/star.svg') no-repeat;
     position: absolute;
     top: -125px;
     right: -200px;
+    width: 383px;
+    height: 376px;
 
     @include breakpoint(md) {
         right: 200px;
@@ -1298,15 +1301,8 @@
         right: unset;
     }
 
-    @include breakpoint(xl) {
-        width: 363px;
-        height: 376px;
-    }
-
     @include breakpoint(hd) {
         left: -405px;
-        width: 384px;
-        height: 375px;
     }
 }
 

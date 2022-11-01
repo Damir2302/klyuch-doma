@@ -4,6 +4,7 @@ $(document).ready(function() {
     if ($('#yaMap').length) {
 
         ymaps.ready(function () {
+            let coordArr = document.getElementById('yaMap').dataset.coord.split(',').map(function(item) { return parseFloat(item) });
             var myMap = new ymaps.Map('yaMap', {
                     center: [56.170526, 40.415482],
                     zoom: 15,
@@ -12,7 +13,7 @@ $(document).ready(function() {
                     searchControlProvider: 'yandex#search'
                 }),
 
-                myPlacemark = new ymaps.Placemark([56.170581, 40.414522], {
+                myPlacemark = new ymaps.Placemark(coordArr, {
                     iconContent: '<div style="background: #fff;width: 134px;padding: 5px 8px;height: 15px;border-radius: 15px;margin-top: -4px;margin-left: 20px;">Выставочная площадка</div>'
                 }, {
                     // Опции.
@@ -25,6 +26,7 @@ $(document).ready(function() {
                 .add(myPlacemark);
 
             myMap.behaviors.disable('scrollZoom')
+            myMap.setBounds(myMap.geoObjects.getBounds(), {checkZoomRange:true}).then(function(){ if(myMap.getZoom() > 15) myMap.setZoom(15)} )
         });
 
     }

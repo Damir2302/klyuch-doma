@@ -647,7 +647,7 @@
 }
 
 .category-accomp {
-    margin-top: 60px;
+    margin: 60px auto 0;
     padding: 0;
     background: none;
 
@@ -711,21 +711,21 @@
     }
 }
 
-.accomp__item:nth-child(4)::after {
+.category-accomp .accomp__item:nth-child(4)::after {
 
     @include breakpoint(lg) {
         content: '';
     }
 }
 
-.accomp__item:nth-child(5)::after {
+.category-accomp .accomp__item:nth-child(5)::after {
 
     @include breakpoint(xl) {
         content: none;
     }
 }
 
-.accomp__item:nth-child(6)::after {
+.category-accomp .accomp__item:nth-child(6)::after {
 
     @include breakpoint(lg) {
         right: calc(100% + 86px)!important;
@@ -740,7 +740,7 @@
     }
 }
 
-.accomp__item:nth-child(7)::after {
+.category-accomp .accomp__item:nth-child(7)::after {
 
     @include breakpoint(lg) {
         right: calc(100% + 86px)!important;
@@ -1159,4 +1159,157 @@
 
 .c-price-s-wrap p {
     max-width: 987px;
+}
+
+.price-inlude {
+    margin-top: 60px;
+
+    @include breakpoint(md) {
+        margin-top: 80px;
+    }
+
+    @include breakpoint(lg) {
+        margin-top: 100px;
+    }
+
+    @include breakpoint(xl) {
+        margin-top: 120px;
+    }
+
+    @include breakpoint(hd) {
+        margin-top: 150px;
+    }
+}
+
+.price-inlude .s-title {
+    max-width: 500px;
+}
+
+.p-inlude__wrap {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include breakpoint(md) {
+        justify-content: space-between;
+        max-width: 744px;
+    }
+
+    @include breakpoint(lg) {
+        max-width: 960px;
+    }
+
+    @include breakpoint(xl) {
+        max-width: 1200px;
+    }
+
+    @include breakpoint(hd) {
+        max-width: 1720px;
+    }
+}
+
+.p-inlude__item {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-start;
+    max-width: 300px;
+
+    @include breakpoint(md) {
+        margin-bottom: 30px;
+        width: calc(50% - 10px);
+        max-width: unset;
+    }
+
+    @include breakpoint(lg) {
+        width: calc(50% - 15px);
+    }
+
+    @include breakpoint(xl) {
+        width: calc(50% - 20px);
+    }
+
+    @include breakpoint(hd) {
+        margin-bottom: 40px;
+    }
+}
+
+.p-include__item-num {
+    margin-top: -8px;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: $red;
+
+    @include breakpoint(md) {
+        margin-top: -5px;
+    }
+}
+
+.p-include__item-num::after {
+    content: '';
+    margin: 0 13px;
+    background: $red;
+    display: inline-block;
+    width: 20px;
+    height: 2px;
+
+    @include breakpoint(lg) {
+        margin: 0 20px;
+        width: 50px;
+    }
+
+    @include breakpoint(xl) {
+        margin: 0 25px;
+        width: 68px;
+    }
+}
+
+.p-inlude__item-title {
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    text-transform: uppercase;
+
+    @include breakpoint(md) {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    @include breakpoint(xl) {
+        margin-bottom: 4px;
+    }
+
+    @include breakpoint(hd) {
+        margin-bottom: 20px;
+    }
+}
+
+.p-inlude__item-text {
+
+    @include breakpoint(xl) {
+        font-size: 20px;
+    }
+}
+
+.c-offers {
+    margin-top: 100px;
+
+    @include breakpoint(md) {
+        margin-top: 60px;
+    }
+
+    @include breakpoint(lg) {
+        margin-top: 100px;
+    }
+
+    @include breakpoint(xl) {
+        margin-top: 175px;
+    }
+
+    @include breakpoint(hd) {
+        margin-top: 220px;
+    }
 }
