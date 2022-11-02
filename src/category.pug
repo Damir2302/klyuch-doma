@@ -374,21 +374,22 @@ block main
                 .container
 
                     .c-offers-block
+                        .c-offers-bg
 
                         .c-offers__left
                             h2.s-title Не откладывайте мечту на завтра
-                            p Воспользуйтесь программами ипотеки и кредитования
+                            p Воспользуйтесь программами ипотеки и&nbsp;кредитования
                             .button-style.button-style--red Получить предложение
 
                         .c-offers__right
-                            p Процентная ставка
-                            p от 4,2%
+                            .c-offers-text
+                                p.c-offers-text-s Процентная ставка
+                                p.c-offers-text-x от 4,2%
 
-                            p Первоначальный взнос
-                            p от 1 млн ₽
+                            .c-offers-text
+                                p.c-offers-text-s Первоначальный взнос
+                                p.c-offers-text-x от 1 млн ₽
 
-                        .offers__accreditation
-                            p Мы аккредитованы в банках и&nbsp;даем лучшие  условия на строительство дома
                             .accreditation-wrap
                                 .accreditation-icon
                                     img(src="assets/images/sber-ico.svg", alt="icon")
@@ -396,3 +397,35 @@ block main
                                     img(src="assets/images/vector-ico.svg", alt="icon")
                                 .accreditation-icon
                                     img(src="assets/images/pochta-ico.svg", alt="icon")
+
+            .additional
+
+                .container
+
+                    h2.s-title Дополнительные услуги
+
+                    .additional__wrapper
+
+                        .additional__block
+                            +sprite('ad-l-1')
+                            h4 Подбор земельного участка
+
+                        .additional__block
+                            +sprite('ad-l-2')
+                            h4 Монтаж инженерных коммуникаций
+
+                        .additional__block
+                            +sprite('ad-l-3')
+                            h4 Доработка проекта под клиента
+
+                        .additional__block
+                            +sprite('ad-l-4')
+                            h4 Возведение фундамента
+
+                        .additional__block
+                            +sprite('ad-l-5')
+                            h4 Отделочные работы
+
+                        .additional__block
+                            +sprite('ad-l-6')
+                            h4 Дизайн интерьеров и ланшафта
