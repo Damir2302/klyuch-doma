@@ -293,7 +293,7 @@ block main
 
                 .construction__item
                     .construction__item-icon
-                        i.fal.fa-house
+                        img(src="assets/images/house.svg", alt="icon")
                     .construction__item-title Построим дом
                     .construction__item-list
                         p Индивидуальная разработка проекта
@@ -303,8 +303,7 @@ block main
 
                 .construction__item
                     .construction__item-icon
-                        include includes/_mixins
-                        +sprite('construction')
+                        img(src="assets/images/construction.svg", alt="icon")
                     .construction__item-title Проведем коммуникации
                     .construction__item-list
                         p Электричество
@@ -314,8 +313,7 @@ block main
 
                 .construction__item
                     .construction__item-icon
-                        include includes/_mixins
-                        +sprite('roller')
+                        img(src="assets/images/roller.svg", alt="icon")
                     .construction__item-title Выполним отделочные работы
                     .construction__item-list
                         p Обшивка
@@ -324,7 +322,7 @@ block main
 
                 .construction__item
                     .construction__item-icon
-                        i.far.fa-house-tree
+                        img(src="assets/images/house-tree.svg", alt="icon")
                     .construction__item-title Поможем после строительства
                     .construction__item-list
                         p Дизайн интервьеров и ландшафта
@@ -437,4 +435,4 @@ block main
 
                 .h-contacts__map
 
-                    #yaMap(style="width: 100%; height: 100%")
+                    #yaMap(style="width: 100%; height: 100%" data-coord="56.170581, 40.414522")

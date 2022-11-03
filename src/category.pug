@@ -407,25 +407,151 @@ block main
                     .additional__wrapper
 
                         .additional__block
-                            +sprite('ad-l-1')
-                            h4 Подбор земельного участка
+                            .additional__ico
+                                +sprite('ad-l-1')
+                            h4.additional__label Подбор земельного участка
 
                         .additional__block
-                            +sprite('ad-l-2')
-                            h4 Монтаж инженерных коммуникаций
+                            .additional__ico
+                                +sprite('ad-l-2')
+                            h4.additional__label Монтаж инженерных коммуникаций
 
                         .additional__block
-                            +sprite('ad-l-3')
-                            h4 Доработка проекта под клиента
+                            .additional__ico
+                                +sprite('ad-l-3')
+                            h4.additional__label Доработка проекта&nbsp;под клиента
 
                         .additional__block
-                            +sprite('ad-l-4')
-                            h4 Возведение фундамента
+                            .additional__ico
+                                +sprite('ad-l-4')
+                            h4.additional__label Возведение фундамента
 
                         .additional__block
-                            +sprite('ad-l-5')
-                            h4 Отделочные работы
+                            .additional__ico
+                                +sprite('ad-l-5')
+                            h4.additional__label Отделочные работы
 
                         .additional__block
-                            +sprite('ad-l-6')
-                            h4 Дизайн интерьеров и ланшафта
+                            .additional__ico
+                                +sprite('ad-l-6')
+                            h4.additional__label Дизайн интерьеров и ланшафта
+
+
+                // ПОХОЖИЕ ПРОЕКТЫ
+                .similar-section.catalog
+
+                    .container
+
+                        h2.s-title Похожие проекты
+
+                        .catalog__inner
+
+                            .catalog__item
+                                a(href="#")
+                                    .catalog__item-image
+                                        img(src="assets/images/img-4.jpg", alt="img")
+                                    p.catalog__item-title Каркасный дом «Кидекша»
+                                    p.catalog__item-price.label-style.label-style--blue от 3 350 000 ₽
+                                    p.catalog__item-qtr.label-style.label-style--gray 10,1 х 9,2м
+                                    p.catalog__item-qtr.label-style.label-style--gray 148м²
+
+                            .catalog__item
+                                a(href="#")
+                                    .catalog__item-image
+                                        img(src="assets/images/img-4.jpg", alt="img")
+                                    p.catalog__item-title Каркасный дом «Кидекша»
+                                    p.catalog__item-price.label-style.label-style--blue от 3 350 000 ₽
+                                    p.catalog__item-qtr.label-style.label-style--gray 10,1 х 9,2м
+                                    p.catalog__item-qtr.label-style.label-style--gray 148м²
+
+                            .catalog__item
+                                a(href="#")
+                                    .catalog__item-image
+                                        img(src="assets/images/img-4.jpg", alt="img")
+                                    p.catalog__item-title Каркасный дом «Кидекша»
+                                    p.catalog__item-price.label-style.label-style--blue от 3 350 000 ₽
+                                    p.catalog__item-qtr.label-style.label-style--gray 10,1 х 9,2м
+                                    p.catalog__item-qtr.label-style.label-style--gray 148м²
+
+
+                // ПРОЕКТЫ
+                .similar-section.catalog
+
+                    .container
+
+                        h2.s-title Хозяйственные постройки для участка
+
+                        .catalog__inner
+
+                            .catalog__item
+                                a(href="#")
+                                    .catalog__item-image
+                                        img(src="assets/images/img-2.jpg", alt="img")
+                                    p.catalog__item-title Беседки деревянные
+                                    p.catalog__item-price.label-style.label-style--blue от 150 000 ₽
+                                    p.catalog__item-qtr.label-style.label-style--gray 15 вариантов
+
+                            .catalog__item
+                                a(href="#")
+                                    .catalog__item-image
+                                        img(src="assets/images/img-2.jpg", alt="img")
+                                    p.catalog__item-title Будки для собак деревянные
+                                    p.catalog__item-price.label-style.label-style--blue от 150 000 ₽
+                                    p.catalog__item-qtr.label-style.label-style--gray 3 варианта
+
+                            .catalog__item
+                                a(href="#")
+                                    .catalog__item-image
+                                        img(src="assets/images/img-2.jpg", alt="img")
+                                    p.catalog__item-title Дачные хоз-блоки
+                                    p.catalog__item-price.label-style.label-style--blue от  54 000 ₽
+                                    p.catalog__item-qtr.label-style.label-style--gray 2 вариантов
+
+                // Форма обратной связи
+                .category-form.s-form
+
+                    .container
+
+                        .s-form__inner
+
+                            .s-form__label
+                                h2.s-title Не нашли, что искали?
+
+                                p Свяжитесь с нами:
+
+                                .s-form__contacts
+                                    .s-form-phone
+                                        a(href="tel:+7(920)911-93-91") +7(920)911-93-91
+
+                                    .s-form-socials
+                                        a(href="#")
+                                            .far.fa-whatsapp
+
+                                        a(href="#")
+                                            .far.fa-telegram
+
+                                        a(href="#")
+                                            .far.fa-vk
+
+                                p Или оставьте заявку, и мы свяжемся с вами в ближайшее время
+
+
+                            form.form-question
+                                .form-bg
+
+                                .input-style
+                                    input(type="text" placeholder="Имя" required)
+
+                                .input-style
+                                    input(type="tel" placeholder="Телефон" required)
+
+                                .input-style
+                                    input(type="email" placeholder="Почта" required)
+
+                                .s-form-submit
+                                    .button-style.button-style--white
+                                        input(type="submit" value="Отправить")
+
+                                    div.form-question-bottom.d-flex
+                                        i.fal.fa-square-check
+                                        p Согласен(на) на <a href="#">обработку персональных данных</a>

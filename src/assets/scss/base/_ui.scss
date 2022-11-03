@@ -157,6 +157,11 @@ textarea {
     background: $darkblue;
 }
 
+.button-style--white {
+    background: #fff;
+    color: $black;
+}
+
 .d-flex {
     display: flex;
     align-items: baseline;

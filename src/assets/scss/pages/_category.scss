@@ -10,6 +10,7 @@
 }
 
 .category-page section {
+    padding-bottom: 0;
 
     @include breakpointMax(lg) {
         padding-top: 20px;
@@ -1565,5 +1566,390 @@
 
     @include breakpoint(hd) {
         margin-top: 150px;
+    }
+}
+
+.additional__wrapper {
+
+    @include breakpoint(md) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+.additional__block {
+    display: flex;
+
+    @include breakpoint(md) {
+        margin-bottom: 40px;
+        display: block;
+        width: calc((100% / 3) - 20px);
+    }
+
+    @include breakpoint(xl) {
+        margin-bottom: 50px;
+        display: flex;
+    }
+
+    @include breakpoint(hd) {
+        margin-bottom: 100px;
+    }
+}
+
+.additional__block ~ .additional__block {
+
+    @include breakpointMax(md) {
+        margin-top: 30px;
+    }
+}
+
+.additional__block:nth-child(n+4) {
+
+    @include breakpoint(md) {
+        margin-bottom: 0;
+    }
+}
+
+.additional__ico {
+    margin-right: 20px;
+    fill: none;
+
+    @include breakpoint(md) {
+        margin: 0;
+        margin-bottom: 30px;
+    }
+
+    @include breakpoint(xl) {
+        margin: 0;
+        margin-right: 30px;
+    }
+
+    @include breakpoint(hd) {
+        margin-right: 40px;
+    }
+}
+
+.additional__ico svg {
+    min-width: 50px;
+    min-height: 50px;
+    max-width: 50px;
+    max-height: 50px;
+
+    @include breakpoint(md) {
+        min-width: 70px;
+        min-height: 70px;
+        max-width: 70px;
+        max-height: 70px;
+    }
+}
+
+.additional__label {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    text-transform: uppercase;
+
+    @include breakpoint(md) {
+        font-size: 20px;
+    }
+
+    @include breakpoint(hd) {
+        max-width: 348px;
+        font-size: 25px;
+    }
+}
+
+.similar-section {
+    margin-top: 60px;
+
+    @include breakpoint(md) {
+        margin-top: 80px;
+    }
+
+    @include breakpoint(lg) {
+        margin-top: 100px;
+    }
+
+    @include breakpoint(xl) {
+        margin-top: 120px;
+    }
+
+    @include breakpoint(hd) {
+        margin-top: 150px;
+    }
+}
+
+.similar-section .s-title {
+
+    @include breakpoint(md) {
+        max-width: 645px;
+    }
+
+    @include breakpoint(xl) {
+        max-width: unset;
+    }
+}
+
+.similar-section .catalog__item {
+
+    @include breakpoint(lg) {
+        margin: 0;
+        width: calc((100% / 3) - 20px);
+    }
+
+    @include breakpoint(xl) {
+        width: calc((100% / 3) - 28px);
+    }
+}
+
+.similar-section .catalog__item-image {
+
+    @include breakpoint(lg) {
+        height: calc(((100vw / 3) - 55px) / 1.333);
+    }
+
+    @include breakpoint(xl) {
+        height: calc(((100vw / 3) - 100px) / 1.333);
+    }
+
+    @include breakpoint(hd) {
+        height: 407px;
+    }
+}
+
+.similar-section .catalog__item-title {
+
+    @include breakpoint(lg) {
+        margin-top: 10px;
+        font-size: 20px;
+    }
+
+    @include breakpoint(xl) {
+        margin-top: 25px;
+    }
+
+    @include breakpoint(hd) {
+        font-size: 25px;
+        line-height: 35px;
+    }
+}
+
+.similar-section .catalog__item-price {
+    margin-top: 15px;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+
+    @include breakpoint(md) {
+        display: block;
+        max-width: 195px;
+    }
+
+    @include breakpoint(hd) {
+        margin-right: 12px;
+        display: inline-block;
+    }
+}
+
+.similar-section .catalog__item-qtr {
+    margin-top: 12px;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.similar-section .catalog__item-qtr + .catalog__item-qtr {
+    margin-left: 12px;
+}
+
+.category-form {
+    margin-top: 60px;
+    background: $red;
+
+    @include breakpoint(md) {
+        margin-top: 80px;
+    }
+
+    @include breakpoint(lg) {
+        margin-top: 100px;
+    }
+
+    @include breakpoint(xl) {
+        margin-top: 120px;
+    }
+
+    @include breakpoint(hd) {
+        margin-top: 150px;
+    }
+}
+
+.category-form::before {
+    background: #E11010;
+}
+
+.category-form .s-form__inner {
+
+    @include breakpoint(md) {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    @include breakpoint(lg) {
+        align-items: flex-start;
+    }
+}
+
+.category-form .s-form__label {
+
+    @include breakpoint(md) {
+        width: calc(((100% + 35px) / 12) * 5);
+    }
+
+    @include breakpoint(hd) {
+        max-width: 456px;
+    }
+}
+
+.category-form .form-question {
+
+    @include breakpoint(md) {
+        margin: 0;
+        width: calc(((100% + 30px) / 12) * 6);
+    }
+
+    @include breakpoint(hd) {
+        width: calc(((100% - 20px) / 12) * 5);
+    }
+}
+
+.category-form .form-bg {
+
+    @include breakpoint(md) {
+        top: 0;
+    }
+
+    @include breakpoint(lg) {
+        left: -200px;
+    }
+
+    @include breakpoint(hd) {
+        left: -390px;
+    }
+}
+
+.s-form__label p {
+
+    @include breakpoint(lg) {
+        font-size: 20px;
+    }
+}
+
+.category-form .s-title {
+    margin-bottom: 18px;
+    max-width: 195px;
+
+    @include breakpoint(md) {
+        margin-bottom: 20px;
+        max-width: 295px;
+    }
+
+    @include breakpoint(lg) {
+        margin-bottom: 36px;
+    }
+
+    @include breakpoint(hd) {
+        max-width: 412px;
+    }
+}
+
+.s-form__contacts {
+    margin-bottom: 8px;
+    position: relative;
+    z-index: 1;
+
+    @include breakpoint(lg) {
+        margin: 18px 0 40px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.s-form-phone {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+
+    @include breakpoint(lg) {
+        margin-right: 30px;
+    }
+
+    @include breakpoint(hd) {
+        margin-right: 70px;
+    }
+}
+
+.s-form-socials {
+    margin: 14px 0 24px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 155px;
+
+    @include breakpoint(lg) {
+        margin: 0;
+    }
+}
+
+.s-form-socials a {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 37px;
+}
+
+.category-form .input-style {
+    border-color: rgba(255,255,255,0.5);
+
+    @include breakpoint(hd) {
+        max-width: 546px;
+    }
+}
+
+.category-form .s-form-submit {
+
+    @include breakpoint(md) {
+        display: block;
+    }
+
+    @include breakpoint(lg) {
+        display: flex;
+    }
+}
+
+.category-form .button-style {
+
+    @include breakpoint(md) {
+        padding: 16px 54px;
+        max-width: 210px;
+    }
+
+    @include breakpoint(lg) {
+        margin-right: 20px;
+    }
+}
+
+.category-form .button-style input {
+    font-weight: 500;
+    color: $black;
+}
+
+.category-form .form-question-bottom {
+
+    @include breakpoint(md) {
+        margin: 18px 0 0;
+    }
+
+    @include breakpoint(lg) {
+        margin: 0;
     }
 }
