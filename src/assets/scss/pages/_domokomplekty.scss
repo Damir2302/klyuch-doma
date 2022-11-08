@@ -18,8 +18,362 @@
     }
 }
 
-p {
-    max-height: 380px;
-    mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, black), to(transparent));
-    -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+.complement-start h3 {
+    margin-bottom: 12px;
+    font-size: 20px;
+    line-height: 140%;
+    text-transform: uppercase;
+
+    @include breakpoint(md) {
+        margin-bottom: 20px;
+        font-size: 30px;
+    }
+
+    @include breakpoint(lg) {
+        margin-bottom: 28px;
+    }
+}
+
+.text-overflow p {
+
+    @include breakpoint(md) {
+        max-width: 585px;
+    }
+
+    @include breakpoint(lg) {
+        max-width: 782px;
+        font-size: 20px;
+    }
+
+    @include breakpoint(xl) {
+        max-width: 987px;
+    }
+}
+
+// .text-overflow p {
+//     max-height: 480px;
+//     mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, black), to(transparent));
+//     -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+// }
+.text-overflow .show-more-btn {
+    display: none;
+}
+// .text-overflow .show-more-btn {
+//     display: inline-block;
+//     font-weight: 700;
+//     font-size: 20px;
+//     line-height: 150%;
+//     color: $blue;
+//     cursor: pointer;
+// }
+
+.complement .catalog__inner {
+    margin-top: 40px;
+
+    @include breakpoint(xl) {
+        margin-top: 50px;
+    }
+}
+
+.complement .catalog__item {
+
+    @include breakpoint(lg) {
+        width: calc((100% / 3) - 20px);
+    }
+
+    @include breakpoint(hd) {
+        width: 547px;
+    }
+}
+
+.complement .catalog__item:last-child {
+
+    @include breakpoint(lg) {
+        margin-right: auto;
+    }
+}
+
+.complement .catalog__item-title {
+    font-size: 16px;
+    line-height: 150%;
+
+    @include breakpoint(md) {
+        font-size: 20px;
+    }
+
+    @include breakpoint(hd) {
+        font-size: 30px;
+        max-width: 400px;
+    }
+}
+
+.complement-price {
+    margin-top: 60px;
+
+    @include breakpoint(md) {
+        margin-top: 80px;
+    }
+
+    @include breakpoint(lg) {
+        margin-top: 100px;
+    }
+
+    @include breakpoint(xl) {
+        margin-top: 120px;
+    }
+
+    @include breakpoint(hd) {
+        margin-top: 150px;
+    }
+}
+
+.complement-price .s-title {
+    margin-bottom: 30px;
+
+    @include breakpoint(md) {
+        margin-bottom: 40px;
+    }
+
+    @include breakpoint(xl) {
+        margin-bottom: 50px;
+    }
+
+    @include breakpoint(hd) {
+        margin-bottom: 60px;
+    }
+}
+
+.co-price {
+
+    @include breakpoint(md) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+.co-price__block {
+    padding: 30px 20px;
+    background: #F2F2F2;
+
+    @include breakpoint(md) {
+        margin-bottom: 20px;
+        padding: 48px 30px 40px;
+        width: calc(50% - 10px);
+    }
+
+    @include breakpoint(lg) {
+        margin-bottom: 30px;
+        padding: 50px 40px;
+        width: calc(50% - 15px);
+    }
+
+    @include breakpoint(xl) {
+        margin-bottom: 0;
+        padding: 40px 30px;
+        width: calc((100% / 3) - (80px / 3));
+    }
+
+    @include breakpoint(hd) {
+        padding: 60px 50px;
+        width: 547px;
+    }
+}
+
+.co-price__block ~ .co-price__block {
+
+    @include breakpointMax(md) {
+        margin-top: 60px;
+    }
+}
+
+.co-price__block h3 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+    text-transform: uppercase;
+
+    @include breakpoint(lg) {
+        font-size: 30px;
+    }
+}
+
+.co-price__block h4 {
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    text-transform: uppercase;
+
+    @include breakpoint(lg) {
+        font-size: 20px;
+    }
+
+    @include breakpoint(hd) {
+        font-size: 25px;
+    }
+}
+
+.co-price__block ul {
+    max-width: 215px;
+
+    @include breakpoint(xl) {
+        max-width: 360px;
+    }
+}
+
+.co-price__block li {
+    margin-top: 8px;
+    display: flex;
+
+    @include breakpoint(md) {
+        margin-top: 16px;
+    }
+
+    @include breakpoint(lg) {
+        font-size: 20px;
+    }
+
+    @include breakpoint(hd) {
+        margin-top: 20px;
+    }
+}
+
+.co-price__block li::before {
+    content: '\f111';
+    margin-right: 12px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    font-family: $fa5;
+    font-weight: 900;
+    color: $red;
+    border-radius: 50%;
+}
+
+.co-price__block span {
+    margin-top: 16px;
+    display: inline-block;
+
+    @include breakpoint(lg) {
+        font-size: 20px;
+    }
+}
+
+.complement-features {
+    margin-top: 60px;
+
+    @include breakpoint(md) {
+        margin-top: 80px;
+    }
+
+    @include breakpoint(lg) {
+        margin-top: 100px;
+    }
+
+    @include breakpoint(xl) {
+        margin-top: 120px;
+    }
+
+    @include breakpoint(hd) {
+        margin-top: 150px;
+    }
+}
+
+.complement-features .s-title {
+    margin-bottom: 24px;
+
+    @include breakpoint(md) {
+        margin-bottom: 40px;
+    }
+
+    @include breakpoint(xl) {
+        margin-bottom: 50px;
+    }
+
+    @include breakpoint(hd) {
+        margin-bottom: 60px;
+    }
+}
+
+.co-features {
+
+    @include breakpoint(md) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.co-features__block {
+    max-width: 360px;
+
+    @include breakpoint(md) {
+        width: calc((100% / 3) - (40px / 3));
+        max-width: unset;
+    }
+
+    @include breakpoint(lg) {
+        width: calc((100% / 3) - (70px / 3));
+    }
+
+    @include breakpoint(xl) {
+        display: flex;
+        width: calc((100% / 3) - (80px / 3));
+    }
+
+    @include breakpoint(hd) {
+        width: 450px;
+    }
+}
+
+.co-features__block ~ .co-features__block {
+
+    @include breakpointMax(md) {
+        margin-top: 30px;
+    }
+}
+
+.co-features__ico {
+    margin-bottom: 12px;
+    font-size: 40px;
+    line-height: 150%;
+    color: $red;
+
+    @include breakpoint(lg) {
+        margin-bottom: 20px;
+        font-size: 50px;
+    }
+
+    @include breakpoint(xl) {
+        margin-bottom: 0;
+        margin-right: 30px;
+        display: flex;
+    }
+
+    @include breakpoint(hd) {
+        margin-right: 40px;
+        font-size: 62px;
+    }
+}
+
+.co-features__wrap h4 {
+    margin-bottom: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    @include breakpoint(lg) {
+        margin-bottom: 16px;
+        font-size: 20px;
+    }
+
+    @include breakpoint(hd) {
+        font-size: 25px;
+    }
+}
+
+.co-features__wrap p {
+
+    @include breakpoint(lg) {
+        font-size: 20px;
+    }
 }

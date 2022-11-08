@@ -8862,9 +8862,8 @@ section {
     }
 }
 
-p {
-    overflow: scroll;
+p.s {
     max-height: 380px;
-    -webkit-mask-image: gradient(linear, left top, left bottom, color-stop(50%, black), to(transparent));
-    mask-image: gradient(linear, left top, left bottom, color-stop(50%, black), to(transparent))
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, black), to(transparent));
+    -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%)
 }
