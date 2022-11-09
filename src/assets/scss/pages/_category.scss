@@ -163,6 +163,13 @@
     }
 }
 
+.info-nav .swiper-wrapper {
+
+    @include breakpoint(lg) {
+        justify-content: center;
+    }
+}
+
 .info__nav-item {
     width: auto;
     font-weight: 500;
@@ -659,17 +666,15 @@
 
     @include breakpoint(lg) {
         margin-top: 100px;
-        max-width: 1024px;
+        max-width: unset;
     }
 
     @include breakpoint(xl) {
         margin-top: 120px;
-        max-width: 1400px;
     }
 
     @include breakpoint(hd) {
         margin-top: 150px;
-        max-width: 1920px;
     }
 }
 
@@ -686,6 +691,23 @@
     }
 }
 
+.category-accomp .accomp__inner {
+
+    @include breakpoint(lg) {
+        margin-left: -30px;
+        justify-content: unset;
+    }
+
+    @include breakpoint(xl) {
+        margin-left: -40px;
+        max-width: 1240px;
+    }
+
+    @include breakpoint(hd) {
+        max-width: unset;
+    }
+}
+
 .category-accomp .accomp__item {
 
     @include breakpoint(md) {
@@ -693,7 +715,34 @@
     }
 
     @include breakpoint(lg) {
-        width: calc((100% - 30px) / 4);
+        margin-left: 30px;
+        width: 213px;
+    }
+
+    @include breakpoint(xl) {
+        margin-left: 40px;
+        width: 270px;
+    }
+
+    @include breakpoint(hd) {
+        width: 400px;
+    }
+}
+
+.category-accomp .accomp__item:nth-child(5),
+.category-accomp .accomp__item:nth-child(6),
+.category-accomp .accomp__item:nth-child(7) {
+
+    @include breakpoint(lg) {
+        width: 294px;
+    }
+
+    @include breakpoint(xl) {
+        width: 371px;
+    }
+
+    @include breakpoint(hd) {
+        width: 400px;
     }
 }
 
@@ -737,7 +786,7 @@
     }
 
     @include breakpoint(hd) {
-        right: calc(100% + 200px)!important;
+        right: calc(100% + 90px)!important;
     }
 }
 
@@ -752,7 +801,7 @@
     }
 
     @include breakpoint(hd) {
-        right: calc(100% + 200px)!important;
+        right: calc(100% + 90px)!important;
     }
 }
 
@@ -1736,20 +1785,8 @@
 }
 
 .similar-section .catalog__item-price {
-    margin-top: 15px;
     font-size: 20px;
-    line-height: 24px;
     text-transform: uppercase;
-
-    @include breakpoint(md) {
-        display: block;
-        max-width: 195px;
-    }
-
-    @include breakpoint(hd) {
-        margin-right: 12px;
-        display: inline-block;
-    }
 }
 
 .similar-section .catalog__item-qtr {
@@ -1838,7 +1875,7 @@
     }
 }
 
-.s-form__label p {
+.category-form .s-form__label p {
 
     @include breakpoint(lg) {
         font-size: 20px;

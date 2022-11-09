@@ -244,10 +244,28 @@
 .catalog__item-price {
     margin-top: 15px;
 
-
     @include breakpoint(md) {
         margin-top: 20px;
+    }
 
+    @include breakpoint(hd) {
+        display: inline-block;
+    }
+}
+
+.catalog__item-qtr {
+    margin-top: 12px;
+    display: inline-block;
+
+    @include breakpoint(hd) {
+        margin-left: 8px;
+    }
+}
+
+.catalog__item-qtr ~ .catalog__item-qtr {
+
+    @include breakpointMax(hd) {
+        margin-left: 8px;
     }
 }
 
@@ -1422,7 +1440,6 @@
     background: $gray6;
     display: flex;
     flex-direction: column;
-    height: calc((100vw - 40px) * 1.185);
 
     @include breakpoint(md) {
         margin-bottom: 20px;
@@ -1541,9 +1558,15 @@
 }
 
 .solution__item .button-style {
-    margin-top: auto;
+    margin-top: 50px;
     padding: 20px 65px;
     text-align: center;
+    max-width: 240px;
+
+    @include breakpoint(md) {
+        margin-top: auto;
+        max-width: unset;
+    }
 
     @include breakpoint(xl) {
         padding: 0;
@@ -1747,6 +1770,7 @@
 }
 
 .h-contacts .s-title {
+    margin-bottom: 30px;
     margin-top: 0;
 
     @include breakpoint(md) {
@@ -1755,15 +1779,12 @@
     }
 
     @include breakpoint(lg) {
+        margin-bottom: 50px;
         max-width: 844px;
     }
 
-    @include breakpoint(xl) {
-        margin-top: 0;
-    }
-
     @include breakpoint(hd) {
-        margin-top: 0;
+        margin-bottom: 60px;
     }
 }
 
@@ -1903,6 +1924,7 @@
 .h-contacts__map {
     width: 100%;
     height: calc((100vw - 40px) / 0.78);
+    overflow: hidden;
 
     @include breakpoint(md) {
         height: calc((100vw - 40px) / 1.91);

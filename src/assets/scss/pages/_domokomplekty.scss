@@ -1,20 +1,20 @@
 .complement {
-    padding: 40px 0 60px;
+    padding: 40px 0 0;
 
     @include breakpoint(md) {
-        padding: 40px 0 80px;
+        padding: 40px 0 0;
     }
 
     @include breakpoint(lg) {
-        padding: 55px 0 100px;
+        padding: 55px 0 0;
     }
 
     @include breakpoint(xl) {
-        padding: 70px 0 120px;
+        padding: 70px 0 0;
     }
 
     @include breakpoint(hd) {
-        padding: 50px 0 150px;
+        padding: 50px 0 0;
     }
 }
 
@@ -375,5 +375,314 @@
 
     @include breakpoint(lg) {
         font-size: 20px;
+    }
+}
+
+.complement-form {
+    margin-top: 60px;
+    padding: 60px 0;
+    background: $blue;
+    position: relative;
+    color: #fff;
+    overflow: hidden;
+
+    @include breakpoint(md) {
+        margin-top: 80px;
+    }
+
+    @include breakpoint(lg) {
+        margin-top: 100px;
+    }
+
+    @include breakpoint(xl) {
+        margin-top: 120px;
+        padding: 0
+    }
+
+    @include breakpoint(hd) {
+        margin-top: 150px;
+    }
+}
+
+.co-form__inner {
+
+    @include breakpoint(xl) {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.co-form__title {
+    margin-bottom: 30px;
+    font-size: 25px;
+    line-height: 140%;
+
+    @include breakpoint(md) {
+        font-size: 30px;
+    }
+
+    @include breakpoint(lg) {
+        width: calc(((100% / 12) * 5) - 15px);
+        max-width: 360px;
+    }
+
+    @include breakpoint(xl) {
+        width: auto;
+        max-width: unset;
+    }
+
+    @include breakpoint(hd) {
+        font-size: 50px;
+    }
+}
+
+.co-form-question {
+    position: relative;
+
+    @include breakpoint(lg) {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    @include breakpoint(xl) {
+        padding: 70px 0;
+        display: block;
+        width: calc(((100% / 12) * 5) - 10px);
+    }
+
+    @include breakpoint(hd) {
+        padding: 114px 0;
+        width: calc((100% / 12) * 6);
+    }
+}
+
+.co-form-question form {
+
+    @include breakpoint(lg) {
+        width: calc(((100% / 12) * 7) - 15px);
+    }
+
+    @include breakpoint(xl) {
+        width: auto;
+    }
+}
+
+.co-form-question .input-style {
+    position: relative;
+}
+
+.co-form-question .input-style ~ .input-style {
+    margin-top: 30px;
+
+    @include breakpoint(md) {
+        margin-top: 40px;
+    }
+}
+
+.co-form-submit {
+    position: relative;
+
+    @include breakpoint(md) {
+        margin-top: 60px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.co-form-submit .button-style {
+    margin-top: 40px;
+    padding: 16px 54px;
+    display: flex;
+    align-items: center;
+    max-width: 210px;
+    color: #fff;
+
+    @include breakpoint(md) {
+        margin-top: 0;
+    }
+
+    @include breakpoint(xl) {
+        padding: 16px 40px;
+        width: 210px;
+        height: 54px;
+    }
+}
+
+.co-form-submit .button-style input {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.form-question-bottom {
+    margin-top: 21px;
+
+    @include breakpoint(md) {
+        margin-top: 0;
+        margin-left: 15px;
+        max-width: 275px;
+    }
+}
+
+.form-question-bottom p {
+    margin-left: 14px;
+}
+
+.form-question-bottom a {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+}
+
+.form-image {
+    margin-top: 30px;
+
+    @include breakpoint(md) {
+        margin-top: 50px;
+    }
+
+    @include breakpoint(lg) {
+        margin-top: 60px;
+    }
+
+    @include breakpoint(xl) {
+        margin-top: 0;
+        position: absolute;
+        top: 0;
+        right: -100px;
+        width: calc((((100% / 12) * 7) - 20px) + 100px);
+    }
+
+    @include breakpoint(hd) {
+        width: calc(((100% / 12) * 6) + 100px);
+    }
+}
+
+.complement-another {
+    margin-top: 60px;
+
+    @include breakpoint(md) {
+        margin-top: 80px;
+    }
+
+    @include breakpoint(lg) {
+        margin-top: 100px;
+    }
+
+    @include breakpoint(xl) {
+        margin-top: 120px;
+    }
+
+    @include breakpoint(hd) {
+        margin-top: 150px;
+    }
+}
+
+.complement-another .catalog__item:last-child {
+
+    @include breakpoint(lg) {
+        margin-right: unset;
+    }
+}
+
+.complement-table {
+    margin-top: 60px;
+
+    @include breakpoint(md) {
+        margin-top: 80px;
+    }
+
+    @include breakpoint(lg) {
+        margin-top: 100px;
+    }
+
+    @include breakpoint(xl) {
+        margin-top: 120px;
+    }
+
+    @include breakpoint(hd) {
+        margin-top: 150px;
+    }
+}
+
+.co-table__label {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+
+    @include breakpoint(lg) {
+        margin-bottom: 26px;
+    }
+}
+
+.co-table {
+    border: 1px solid #BDBDBD;
+}
+
+.co-table-row {
+    padding: 16px 12px;
+    display: flex;
+    justify-content: space-between;
+
+    @include breakpoint(md) {
+        padding: 20px;
+    }
+
+    @include breakpoint(lg) {
+        padding: 25px 30px;
+    }
+}
+
+.co-table .co-table-row ~ .co-table-row {
+    border-top: 1px solid #BDBDBD;
+}
+
+.co-table-left {
+    width: calc(50% - 10px);
+    font-weight: 700;
+    font-size: 14px;
+
+    @include breakpoint(md) {
+        font-size: 16px;
+    }
+
+    @include breakpoint(lg) {
+        width: calc(50% - 20px);
+        font-size: 20px;
+    }
+
+    @include breakpoint(hd) {
+        width: calc(((100% / 12) * 4) - 20px);
+    }
+}
+
+.co-table-right {
+    width: calc(50% - 10px);
+    font-weight: 400;
+    font-size: 14px;
+
+    @include breakpoint(md) {
+        font-size: 16px;
+    }
+
+    @include breakpoint(lg) {
+        font-size: 20px;
+    }
+
+    @include breakpoint(hd) {
+        width: calc(((100% / 12) * 8) - 20px);
+    }
+}
+
+.co-table__label .label {
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+
+    @include breakpoint(lg) {
+        font-size: 25px;
     }
 }
