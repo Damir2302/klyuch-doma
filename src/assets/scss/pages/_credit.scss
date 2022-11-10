@@ -1,0 +1,207 @@
+.credit h3 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+    text-transform: uppercase;
+
+    @include breakpoint(md) {
+        font-size: 30px;
+    }
+}
+
+.credit h3 ~ h3 {
+    margin-top: 40px;
+
+    @include breakpoint(md) {
+        margin-top: 60px;
+    }
+
+    @include breakpoint(lg) {
+        margin-top: 70px;
+    }
+
+    @include breakpoint(xl) {
+        margin-top: 80px;
+    }
+
+    @include breakpoint(hd) {
+        margin-top: 100px;
+    }
+}
+
+.credit-prolog-wrapper {
+
+    @include breakpoint(md) {
+        max-width: 585px;
+    }
+
+    @include breakpoint(lg) {
+        max-width: 787px;
+    }
+
+    @include breakpoint(hd) {
+        max-width: 1024px;
+    }
+}
+
+.credit-prolog p {
+    margin-top: 16px;
+
+    @include breakpoint(md) {
+        margin-top: 20px;
+    }
+
+    @include breakpoint(lg) {
+        font-size: 20px;
+    }
+
+    @include breakpoint(xl) {
+        margin-top: 35px;
+    }
+
+    @include breakpoint(hd) {
+        margin-top: 40px;
+    }
+}
+
+.credit-prolog ul {
+    margin-top: 20px;
+    padding-left: 20px;
+
+    @include breakpoint(lg) {
+        font-size: 20px;
+    }
+
+    @include breakpoint(xl) {
+        margin-top: 35px;
+    }
+
+    @include breakpoint(hd) {
+        margin-top: 40px;
+    }
+}
+
+.credit-prolog ul li {
+    list-style-type: disc;
+}
+
+.credit-special {
+    margin-top: 40px;
+
+    @include breakpoint(md) {
+        margin-top: 60px;
+    }
+
+    @include breakpoint(lg) {
+        margin-top: 70px;
+    }
+
+    @include breakpoint(xl) {
+        margin-top: 80px;
+    }
+
+    @include breakpoint(hd) {
+        margin-top: 100px;
+    }
+}
+
+.cr-special {
+
+    @include breakpoint(md) {
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    @include breakpoint(lg) {
+        margin-top: 35px;
+    }
+
+    @include breakpoint(hd) {
+        margin-top: 40px;
+    }
+}
+
+.cr-special__item {
+    margin-top: 20px;
+    background: #F2F2F2;
+
+    @include breakpoint(md) {
+        margin-top: 0;
+        margin-bottom: 20px;
+        width: calc(50% - 10px);
+    }
+
+    @include breakpoint(lg) {
+        width: calc((100% / 3) - 20px);
+    }
+
+    @include breakpoint(xl) {
+        width: calc((100% / 3) - (80px / 3));
+    }
+
+    @include breakpoint(hd) {
+        width: 546px;
+    }
+}
+
+.cr-special__wrap {
+    padding: 20px 20px 30px;
+
+    @include breakpoint(xl) {
+        padding: 30px;
+    }
+
+    @include breakpoint(hd) {
+        padding: 30px 40px 40px;
+    }
+}
+
+.cr-special__label {
+    font-weight: 700;
+    text-transform: uppercase;
+
+    @include breakpoint(md) {
+        font-size: 20px;
+    }
+
+    @include breakpoint(hd) {
+        font-size: 25px;
+    }
+}
+
+.cr-special__text {
+    margin-top: 12px;
+    @include textLimit(2);
+
+    @include breakpoint(lg) {
+        font-size: 20px;
+        @include textLimit(3);
+    }
+
+    @include breakpoint(xl) {
+        @include textLimit(5);
+    }
+}
+
+.cr-special__wrap .button-style {
+    margin-top: 30px;
+    padding: 16px 32.5px;
+
+    @include breakpoint(md) {
+        padding: 16px 63.5px;
+    }
+
+    @include breakpoint(lg) {
+        padding: 16px 39.5px;
+    }
+
+    @include breakpoint(xl) {
+        padding: 16px 69px;
+    }
+
+    @include breakpoint(hd) {
+        padding: 16px 54px;
+    }
+}
