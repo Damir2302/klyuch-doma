@@ -9812,3 +9812,743 @@ section {
         font-size: 25px
     }
 }
+
+.credit {
+    padding-bottom: 0
+}
+
+.credit h3 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+    text-transform: uppercase
+}
+
+@media (min-width: 744px) {
+    .credit h3 {
+        font-size: 30px
+    }
+}
+
+.credit h3 ~ h3 {
+    margin-top: 40px
+}
+
+@media (min-width: 744px) {
+    .credit h3 ~ h3 {
+        margin-top: 60px
+    }
+}
+
+@media (min-width: 1024px) {
+    .credit h3 ~ h3 {
+        margin-top: 70px
+    }
+}
+
+@media (min-width: 1400px) {
+    .credit h3 ~ h3 {
+        margin-top: 80px
+    }
+}
+
+@media (min-width: 1920px) {
+    .credit h3 ~ h3 {
+        margin-top: 100px
+    }
+}
+
+@media (min-width: 744px) {
+    .credit-prolog-wrapper {
+        max-width: 585px
+    }
+}
+
+@media (min-width: 1024px) {
+    .credit-prolog-wrapper {
+        max-width: 787px
+    }
+}
+
+@media (min-width: 1920px) {
+    .credit-prolog-wrapper {
+        max-width: 1024px
+    }
+}
+
+.credit-prolog p {
+    margin-top: 16px
+}
+
+@media (min-width: 744px) {
+    .credit-prolog p {
+        margin-top: 20px
+    }
+}
+
+@media (min-width: 1024px) {
+    .credit-prolog p {
+        font-size: 20px
+    }
+}
+
+@media (min-width: 1400px) {
+    .credit-prolog p {
+        margin-top: 35px
+    }
+}
+
+@media (min-width: 1920px) {
+    .credit-prolog p {
+        margin-top: 40px
+    }
+}
+
+.credit-prolog ul {
+    margin-top: 20px;
+    padding-left: 20px
+}
+
+@media (min-width: 1024px) {
+    .credit-prolog ul {
+        font-size: 20px
+    }
+}
+
+@media (min-width: 1400px) {
+    .credit-prolog ul {
+        margin-top: 35px
+    }
+}
+
+@media (min-width: 1920px) {
+    .credit-prolog ul {
+        margin-top: 40px
+    }
+}
+
+.credit-prolog ul li {
+    list-style-type: disc
+}
+
+.credit-special {
+    margin-top: 40px
+}
+
+@media (min-width: 744px) {
+    .credit-special {
+        margin-top: 60px
+    }
+}
+
+@media (min-width: 1024px) {
+    .credit-special {
+        margin-top: 70px
+    }
+}
+
+@media (min-width: 1400px) {
+    .credit-special {
+        margin-top: 80px
+    }
+}
+
+@media (min-width: 1920px) {
+    .credit-special {
+        margin-top: 100px
+    }
+}
+
+@media (min-width: 744px) {
+    .cr-special {
+        margin-top: 30px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between
+    }
+}
+
+@media (min-width: 1024px) {
+    .cr-special {
+        margin-top: 35px
+    }
+}
+
+@media (min-width: 1920px) {
+    .cr-special {
+        margin-top: 40px
+    }
+}
+
+.cr-special__item {
+    margin-top: 20px;
+    background: #F2F2F2
+}
+
+@media (min-width: 744px) {
+    .cr-special__item {
+        margin-top: 0;
+        margin-bottom: 20px;
+        width: calc(50% - 10px)
+    }
+}
+
+@media (min-width: 1024px) {
+    .cr-special__item {
+        width: calc((100% / 3) - 20px)
+    }
+}
+
+@media (min-width: 1400px) {
+    .cr-special__item {
+        width: calc((100% / 3) - (80px / 3))
+    }
+}
+
+@media (min-width: 1920px) {
+    .cr-special__item {
+        width: 546px
+    }
+}
+
+.cr-special__wrap {
+    padding: 20px 20px 30px
+}
+
+@media (min-width: 1400px) {
+    .cr-special__wrap {
+        padding: 30px
+    }
+}
+
+@media (min-width: 1920px) {
+    .cr-special__wrap {
+        padding: 30px 40px 40px
+    }
+}
+
+.cr-special__label {
+    font-weight: 700;
+    text-transform: uppercase
+}
+
+@media (min-width: 744px) {
+    .cr-special__label {
+        font-size: 20px
+    }
+}
+
+@media (min-width: 1920px) {
+    .cr-special__label {
+        font-size: 25px
+    }
+}
+
+.cr-special__text {
+    margin-top: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical
+}
+
+@media (min-width: 1024px) {
+    .cr-special__text {
+        font-size: 20px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
+        -webkit-box-orient: vertical
+    }
+}
+
+@media (min-width: 1400px) {
+    .cr-special__text {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        line-clamp: 5;
+        -webkit-box-orient: vertical
+    }
+}
+
+.cr-special__wrap .button-style {
+    margin-top: 30px;
+    padding: 16px 32.5px
+}
+
+@media (min-width: 744px) {
+    .cr-special__wrap .button-style {
+        padding: 16px 63.5px
+    }
+}
+
+@media (min-width: 1024px) {
+    .cr-special__wrap .button-style {
+        padding: 16px 39.5px
+    }
+}
+
+@media (min-width: 1400px) {
+    .cr-special__wrap .button-style {
+        padding: 16px 69px
+    }
+}
+
+@media (min-width: 1920px) {
+    .cr-special__wrap .button-style {
+        padding: 16px 54px
+    }
+}
+
+.credit-faq {
+    margin-top: 40px
+}
+
+@media (min-width: 744px) {
+    .credit-faq {
+        margin-top: 60px
+    }
+}
+
+@media (min-width: 1024px) {
+    .credit-faq {
+        margin-top: 70px
+    }
+}
+
+@media (min-width: 1400px) {
+    .credit-faq {
+        margin-top: 80px
+    }
+}
+
+@media (min-width: 1920px) {
+    .credit-faq {
+        margin-top: 100px
+    }
+}
+
+.credit-faq h3 {
+    margin-bottom: 20px
+}
+
+@media (min-width: 744px) {
+    .credit-faq h3 {
+        margin-bottom: 30px
+    }
+}
+
+@media (min-width: 1024px) {
+    .credit-faq h3 {
+        margin-bottom: 40px
+    }
+}
+
+.faq__block {
+    padding: 20px 15px;
+    background: #F2F2F2
+}
+
+@media (min-width: 744px) {
+    .faq__block {
+        padding: 25px 20px 30px 30px
+    }
+}
+
+@media (min-width: 1024px) {
+    .faq__block {
+        padding: 20px 25px 30px 30px
+    }
+}
+
+@media (min-width: 1400px) {
+    .faq__block {
+        padding: 25px 25px 25px 40px
+    }
+}
+
+@media (min-width: 1920px) {
+    .faq__block {
+        max-width: 1134px
+    }
+}
+
+.faq__block ~ .faq__block {
+    margin-top: 20px
+}
+
+@media (min-width: 1024px) {
+    .faq__block ~ .faq__block {
+        margin-top: 30px
+    }
+}
+
+@media (min-width: 1400px) {
+    .faq__block ~ .faq__block {
+        margin-top: 20px
+    }
+}
+
+.faq__head {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+@media (min-width: 1400px) {
+    .faq__head {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center
+    }
+}
+
+.faq__question {
+    margin-right: 20px;
+    font-weight: 700;
+    text-transform: uppercase
+}
+
+@media (min-width: 744px) {
+    .faq__question {
+        max-width: 512px;
+        font-size: 20px
+    }
+}
+
+@media (min-width: 1024px) {
+    .faq__question {
+        max-width: 670px
+    }
+}
+
+@media (min-width: 1400px) {
+    .faq__question {
+        max-width: 840px
+    }
+}
+
+@media (min-width: 1920px) {
+    .faq__question {
+        font-size: 25px;
+        max-width: 870px
+    }
+}
+
+.faq__slide-btn {
+    background: #E6332A;
+    top: 20px;
+    right: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    cursor: pointer
+}
+
+@media (min-width: 1024px) {
+    .faq__slide-btn {
+        width: 50px;
+        height: 50px
+    }
+}
+
+.faq__slide-btn i {
+    font-family: "Font Awesome 5 Pro";
+    font-size: 22px;
+    line-height: 1;
+    color: #fff;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease
+}
+
+@media (min-width: 1024px) {
+    .faq__slide-btn i {
+        font-size: 28px
+    }
+}
+
+.faq__block.open .faq__slide-btn i {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg)
+}
+
+.faq__answer {
+    margin-top: 20px;
+    display: none
+}
+
+@media (min-width: 744px) {
+    .faq__answer {
+        max-width: 512px
+    }
+}
+
+@media (min-width: 1024px) {
+    .faq__answer {
+        font-size: 20px;
+        max-width: 670px
+    }
+}
+
+@media (min-width: 1400px) {
+    .faq__answer {
+        max-width: 840px
+    }
+}
+
+@media (min-width: 1920px) {
+    .faq__answer {
+        max-width: 870px
+    }
+}
+
+.credit-form {
+    margin-top: 60px;
+    color: #fff
+}
+
+@media (min-width: 1024px) {
+    .credit-form {
+        margin-top: 180px
+    }
+}
+
+@media (min-width: 1400px) {
+    .credit-form {
+        margin-top: 260px
+    }
+}
+
+@media (min-width: 1920px) {
+    .credit-form {
+        margin-top: 210px
+    }
+}
+
+.credit-form .co-form__inner {
+    background: #E6332A;
+    position: relative
+}
+
+@media (min-width: 1024px) {
+    .credit-form .co-form__inner {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse
+    }
+}
+
+.credit-form .co-form-question {
+    padding: 40px 0 40px
+}
+
+@media (min-width: 1024px) {
+    .credit-form .co-form-question {
+        padding: 70px 0 65px;
+        width: 50%
+    }
+}
+
+@media (min-width: 1400px) {
+    .credit-form .co-form-question {
+        padding: 100px 0
+    }
+}
+
+@media (min-width: 1920px) {
+    .credit-form .co-form-question {
+        padding: 100px 0 68px
+    }
+}
+
+@media (min-width: 1400px) {
+    .credit-form .co-form-question .container {
+        padding: 0 60px
+    }
+}
+
+.credit-form .co-form__title {
+    margin-bottom: 20px;
+    text-transform: uppercase
+}
+
+@media (min-width: 744px) {
+    .credit-form .co-form__title {
+        max-width: 450px;
+        font-size: 38px
+    }
+}
+
+@media (min-width: 1024px) {
+    .credit-form .co-form__title {
+        width: auto;
+        max-width: unset
+    }
+}
+
+@media (min-width: 1920px) {
+    .credit-form .co-form__title {
+        font-size: 50px;
+        max-width: 570px
+    }
+}
+
+@media (min-width: 1024px) {
+    .credit-form .co-form__subtitle {
+        font-size: 20px
+    }
+}
+
+@media (min-width: 1400px) {
+    .credit-form .co-form__subtitle {
+        max-width: 418px
+    }
+}
+
+@media (min-width: 1920px) {
+    .credit-form .co-form__subtitle {
+        max-width: unset
+    }
+}
+
+.credit-form form {
+    margin-top: 20px
+}
+
+@media (min-width: 744px) {
+    .credit-form form {
+        margin-top: 38px
+    }
+}
+
+@media (min-width: 1024px) {
+    .credit-form form {
+        width: 100%;
+        max-width: 450px
+    }
+}
+
+@media (min-width: 1400px) {
+    .credit-form form {
+        margin-top: 46px;
+        max-width: 587px
+    }
+}
+
+@media (min-width: 1920px) {
+    .credit-form form {
+        margin-top: 76px
+    }
+}
+
+.credit-form .input-style {
+    border-color: #fff
+}
+
+@media (min-width: 1024px) {
+    .credit-form .co-form-submit {
+        display: block
+    }
+}
+
+@media (min-width: 1400px) {
+    .credit-form .co-form-submit {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex
+    }
+}
+
+.credit-form .button-style input {
+    color: #252527
+}
+
+@media (min-width: 1024px) {
+    .credit-form .form-question-bottom {
+        margin-top: 20px;
+        margin-left: 0
+    }
+}
+
+@media (min-width: 1400px) {
+    .credit-form .form-question-bottom {
+        margin-top: 0;
+        margin-left: 20px
+    }
+}
+
+.credit-form .form-image {
+    margin-top: -35px;
+    position: relative
+}
+
+@media (min-width: 1024px) {
+    .credit-form .form-image {
+        margin-top: -103px;
+        width: 50%;
+        overflow: hidden
+    }
+}
+
+@media (min-width: 1400px) {
+    .credit-form .form-image {
+        margin-top: -113px;
+        right: unset
+    }
+}
+
+@media (min-width: 1024px) {
+    .credit-form .form-image img {
+        width: 688px;
+        -o-object-fit: cover;
+        object-fit: cover;
+        -o-object-position: right;
+        object-position: right
+    }
+}
+
+@media (min-width: 1400px) {
+    .credit-form .form-image img {
+        width: auto;
+        -webkit-transform: translateX(-375px);
+        -ms-transform: translateX(-375px);
+        transform: translateX(-375px)
+    }
+}
+
+@media (min-width: 1920px) {
+    .credit-form .form-image img {
+        -webkit-transform: unset;
+        -ms-transform: unset;
+        transform: unset
+    }
+}

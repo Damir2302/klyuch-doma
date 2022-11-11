@@ -29,4 +29,10 @@ $(document).ready(function() {
         $('#video')[0].controls = true
     })
 
+    // FAQ
+    $('.faq__slide-btn').on('click', function() {
+        $(this).closest('.faq__block').toggleClass('open')
+        $(this).closest('.faq__block').find('.faq__answer').slideToggle()
+    })
+
 });
