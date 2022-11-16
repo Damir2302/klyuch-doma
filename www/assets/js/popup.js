@@ -6,7 +6,9 @@ $(document).ready(function() {
             !$(e.target).closest('.popup__inner').length &&
             !$(e.target).closest('#project-dwld').length &&
             !$(e.target).closest('.c-price__item-spec').length &&
-            !$(e.target).closest('.c-price-s-inner').length) {
+            !$(e.target).closest('.c-price-s-inner').length &&
+            !$(e.target).closest('.e-catalog-aside').length &&
+            !$(e.target).closest('.e-navbar-mobile').length) {
             $('body').removeClass('overflow-hidden')
             $('#page').removeClass('bg-overlay')
             $('#menu').removeClass('active')

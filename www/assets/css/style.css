@@ -10552,3 +10552,152 @@ section {
         transform: unset
     }
 }
+
+@media (min-width: 744px) {
+    .vacancies {
+        padding-bottom: 60px
+    }
+}
+
+@media (min-width: 1024px) {
+    .vacancies {
+        padding-bottom: 70px
+    }
+}
+
+@media (min-width: 1400px) {
+    .vacancies {
+        padding-bottom: 80px
+    }
+}
+
+@media (min-width: 1920px) {
+    .vacancies {
+        padding-bottom: 110px
+    }
+}
+
+.vacancies__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.vacancies__block {
+    padding: 20px 20px 30px;
+    background: #F2F2F2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 234px
+}
+
+@media (min-width: 744px) {
+    .vacancies__block {
+        margin-bottom: 20px;
+        padding: 30px;
+        width: calc(50% - 10px);
+        height: 252px
+    }
+}
+
+@media (min-width: 1024px) {
+    .vacancies__block {
+        margin-bottom: 30px;
+        width: calc((100% / 3) - 20px);
+        height: 282px
+    }
+}
+
+@media (min-width: 1400px) {
+    .vacancies__block {
+        margin-bottom: 40px;
+        padding: 30px 30px 40px;
+        width: calc((100% / 3) - (80px / 3));
+        height: 254px
+    }
+}
+
+@media (min-width: 1920px) {
+    .vacancies__block {
+        padding: 55px 40px 60px;
+        width: 547px;
+        height: 303px
+    }
+}
+
+@media (max-width: 743px) {
+    .vacancies__block ~ .vacancies__block {
+        margin-top: 20px
+    }
+}
+
+.vacancies__block h4 {
+    max-width: 240px;
+    text-transform: uppercase
+}
+
+@media (min-width: 744px) {
+    .vacancies__block h4 {
+        max-width: 282px;
+        font-size: 20px
+    }
+}
+
+@media (min-width: 1024px) {
+    .vacancies__block h4 {
+        max-width: 285px
+    }
+}
+
+@media (min-width: 1400px) {
+    .vacancies__block h4 {
+        max-width: 315px
+    }
+}
+
+@media (min-width: 1920px) {
+    .vacancies__block h4 {
+        max-width: 470px;
+        font-size: 25px
+    }
+}
+
+.vacancies__block .button-style {
+    margin-top: auto;
+    padding: 20px 65.5px;
+    max-width: 240px;
+    text-align: center
+}
+
+@media (min-width: 744px) {
+    .vacancies__block .button-style {
+        max-width: 282px
+    }
+}
+
+@media (min-width: 1024px) {
+    .vacancies__block .button-style {
+        max-width: 235px
+    }
+}
+
+@media (min-width: 1400px) {
+    .vacancies__block .button-style {
+        padding: 16px 0;
+        max-width: 217px
+    }
+}
+
+.e-commerce {
+    padding-top: 0
+}

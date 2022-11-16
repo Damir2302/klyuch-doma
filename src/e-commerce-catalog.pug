@@ -1,0 +1,171 @@
+---
+title: Klyuch 585 | Пиломатериалы
+page: e-commerce
+---
+
+extends includes/_page
+
+block main
+
+    include includes/_mixins
+
+    include components/_breadcrumbs
+    +breadcrumbs('', 'Каталог', 'Пиломатериалы')
+
+    section.e-commerce
+
+        .container
+
+            .e-catalog
+
+                .e-catalog-aside
+                    .e-navbar-back-mobile.button-style.button-style--red Назад
+
+                    ul.e-navbar
+                        li.e-navbar__item
+                            a.e-navbar__link(href="#") Рейка подрамника и багет
+                            ul.e-subnav
+                                li.e-subnav__item
+                                    a.e-subnav__link(href="#") Материал 1
+                                li.e-subnav__item
+                                    a.e-subnav__link(href="#") Материал 2
+                                li.e-subnav__item
+                                    a.e-subnav__link(href="#") Материал 3
+                        li.e-navbar__item
+                            a.e-navbar__link(href="#") Погонаж сращеный
+                        li.e-navbar__item
+                            a.e-navbar__link(href="#") Обрезной пиломатериал
+                        li.e-navbar__item
+                            a.e-navbar__link(href="#") Отделочные материалы
+                        li.e-navbar__item
+                            a.e-navbar__link(href="#") Балки из клееного бруса
+
+                .e-catalog-container
+
+                    h2.s-title Пиломатериалы
+
+                    .e-catalog-filters
+                        .e-navbar-mobile.button-style.button-style--red Фильтр
+
+                        p.e-filters__result Отображение 1-12 из 43 результатов
+
+                        form.e-filter-select
+                            select.e-orderby(name="orderby")
+                                option(value="popularity") По популярности
+                                option(value="rating") По рейтингу
+                                option(value="price") Цены: по возрастанию
+                                option(value="price-desc") Цены: по убыванию
+
+                    .e-catalog-wrap
+
+                        .e-catalog__block
+                            a(href="#")
+                                .e-catalog__img
+                                    img(src="assets/images/e-commers.jpg", alt="img")
+                                .e-cactalog__title ПОРУЧЕНЬ строганный, сухой, сращенный
+                                .e-cactalog__label.label-style.label-style--blue 14 700 ₽/ м3
+
+                        .e-catalog__block
+                            a(href="#")
+                                .e-catalog__img
+                                    img(src="assets/images/e-commers.jpg", alt="img")
+                                .e-cactalog__title ВАГОНКА сухая
+                                .e-cactalog__label.label-style.label-style--blue 14 700 ₽/ м3
+
+                        .e-catalog__block
+                            a(href="#")
+                                .e-catalog__img
+                                    img(src="assets/images/e-commers.jpg", alt="img")
+                                .e-cactalog__title ЧЕТВЕРТНАЯ ДОСКА сухая
+                                .e-cactalog__label.label-style.label-style--blue 14 700 ₽/ м3
+
+                        .e-catalog__block
+                            a(href="#")
+                                .e-catalog__img
+                                    img(src="assets/images/e-commers.jpg", alt="img")
+                                .e-cactalog__title ИМИТАЦИЯ БРУСА
+                                .e-cactalog__label.label-style.label-style--blue 14 700 ₽/ м3
+
+                        .e-catalog__block
+                            a(href="#")
+                                .e-catalog__img
+                                    img(src="assets/images/e-commers.jpg", alt="img")
+                                .e-cactalog__title ДОСКА ПОЛА сухая
+                                .e-cactalog__label.label-style.label-style--blue 14 700 ₽/ м3
+
+                        .e-catalog__block
+                            a(href="#")
+                                .e-catalog__img
+                                    img(src="assets/images/e-commers.jpg", alt="img")
+                                .e-cactalog__title БЛОК — ХАУС
+                                .e-cactalog__label.label-style.label-style--blue 14 700 ₽/ м3
+
+                        .e-catalog__block
+                            a(href="#")
+                                .e-catalog__img
+                                    img(src="assets/images/e-commers.jpg", alt="img")
+                                .e-cactalog__title БРУС КОРОБОЧНЫЙ, сращ, ЭКСТРА
+                                .e-cactalog__label.label-style.label-style--blue 14 700 ₽/ м3
+
+                        .e-catalog__block
+                            a(href="#")
+                                .e-catalog__img
+                                    img(src="assets/images/e-commers.jpg", alt="img")
+                                .e-cactalog__title НАЩЕЛЬНИК сращенный
+                                .e-cactalog__label.label-style.label-style--blue 14 700 ₽/ м3
+
+                        .e-catalog__block
+                            a(href="#")
+                                .e-catalog__img
+                                    img(src="assets/images/e-commers.jpg", alt="img")
+                                .e-cactalog__title НАЩЕЛЬНИК фигурный сращенный
+                                .e-cactalog__label.label-style.label-style--blue 14 700 ₽/ м3
+
+                        .e-catalog__block
+                            a(href="#")
+                                .e-catalog__img
+                                    img(src="assets/images/e-commers.jpg", alt="img")
+                                .e-cactalog__title ПЛИНТУС сращеный
+                                .e-cactalog__label.label-style.label-style--blue 14 700 ₽/ м3
+
+                        .e-catalog__block
+                            a(href="#")
+                                .e-catalog__img
+                                    img(src="assets/images/e-commers.jpg", alt="img")
+                                .e-cactalog__title Балясина плоская
+                                .e-cactalog__label.label-style.label-style--blue 14 700 ₽/ м3
+
+                        .e-catalog__block
+                            a(href="#")
+                                .e-catalog__img
+                                    img(src="assets/images/e-commers.jpg", alt="img")
+                                .e-cactalog__title Усилитель П-образный
+                                .e-cactalog__label.label-style.label-style--blue 14 700 ₽/ м3
+
+                    .pagination
+
+                        a.pagination-item(href='javascript:void(0)')
+
+                            i.far.fa-angles-left
+
+                        a.pagination-item(href='javascript:void(0)')
+
+                            i.far.fa-angle-left
+
+                        a.pagination-item(href='javascript:void(0)') 1
+
+                        a.pagination-item.active(href='javascript:void(0)') 2
+
+                        a.pagination-item(href='javascript:void(0)') 3
+
+                        a.pagination-item(href='javascript:void(0)') ...
+
+                        a.pagination-item(href='javascript:void(0)') 10
+
+                        a.pagination-item(href='javascript:void(0)')
+
+                            i.far.fa-angle-right
+
+                        a.pagination-item(href='javascript:void(0)')
+
+                            i.far.fa-angles-right

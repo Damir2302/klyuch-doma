@@ -35,4 +35,22 @@ $(document).ready(function() {
         $(this).closest('.faq__block').find('.faq__answer').slideToggle()
     })
 
+    // E-COMMERCE CATALOG
+    $('.e-navbar-mobile').on('click', function() {
+        $('.e-catalog-aside').addClass('open')
+        $('body').addClass('overflow-hidden')
+    })
+
+    $('.e-navbar-back-mobile').on('click', function() {
+        $('.e-catalog-aside').removeClass('open')
+        $('body').removeClass('overflow-hidden')
+    })
+
+    $('.e-navbar__item').on('click', function(e) {
+        if (e.target.classList != 'e-navbar__link') {
+            $(this).toggleClass('active')
+            $(this).find('.e-subnav').slideToggle()
+        }
+    })
+
 });

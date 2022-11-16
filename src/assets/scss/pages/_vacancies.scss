@@ -1,0 +1,108 @@
+.vacancies {
+
+    @include breakpoint(md) {
+        padding-bottom: 60px;
+    }
+
+    @include breakpoint(lg) {
+        padding-bottom: 70px;
+    }
+
+    @include breakpoint(xl) {
+        padding-bottom: 80px;
+    }
+
+    @include breakpoint(hd) {
+        padding-bottom: 110px;
+    }
+}
+
+.vacancies__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.vacancies__block {
+    padding: 20px 20px 30px;
+    background: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    height: 234px;
+
+    @include breakpoint(md) {
+        margin-bottom: 20px;
+        padding: 30px;
+        width: calc(50% - 10px);
+        height: 252px;
+    }
+
+    @include breakpoint(lg) {
+        margin-bottom: 30px;
+        width: calc((100% / 3) - 20px);
+        height: 282px;
+    }
+
+    @include breakpoint(xl) {
+        margin-bottom: 40px;
+        padding: 30px 30px 40px;
+        width: calc((100% / 3) - (80px / 3));
+        height: 254px;
+    }
+
+    @include breakpoint(hd) {
+        padding: 55px 40px 60px;
+        width: 547px;
+        height: 303px;
+    }
+}
+
+.vacancies__block ~ .vacancies__block {
+
+    @include breakpointMax(md) {
+        margin-top: 20px;
+    }
+}
+
+.vacancies__block h4 {
+    max-width: 240px;
+    text-transform: uppercase;
+
+    @include breakpoint(md) {
+        max-width: 282px;
+        font-size: 20px;
+    }
+
+    @include breakpoint(lg) {
+        max-width: 285px;
+    }
+
+    @include breakpoint(xl) {
+        max-width: 315px;
+    }
+
+    @include breakpoint(hd) {
+        max-width: 470px;
+        font-size: 25px;
+    }
+}
+
+.vacancies__block .button-style {
+    margin-top: auto;
+    padding: 20px 65.5px;
+    max-width: 240px;
+    text-align: center;
+
+    @include breakpoint(md) {
+        max-width: 282px;
+    }
+
+    @include breakpoint(lg) {
+        max-width: 235px;
+    }
+
+    @include breakpoint(xl) {
+        padding: 16px 0;
+        max-width: 217px;
+    }
+}
