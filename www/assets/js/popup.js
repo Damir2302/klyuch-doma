@@ -15,6 +15,7 @@ $(document).ready(function() {
             $('.popup').removeClass('show')
             $('.popup__inner').removeClass('active')
             $('.c-price-specification').removeClass('show')
+            $('.e-catalog-aside').removeClass('open')
         }
     })
 

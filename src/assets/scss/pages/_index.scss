@@ -228,6 +228,10 @@
     }
 }
 
+.catalog__item-image img {
+    object-position: bottom;
+}
+
 .catalog__item-title {
     margin-top: 20px;
     font-weight: 700;

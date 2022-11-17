@@ -210,7 +210,7 @@ function cssWatch(cb) {
 }
 
 function cleancss(cb) {
-    return src(path.build.css + 'plugin.min.css')
+    return src(path.build.css + 'plugins.min.css')
         .pipe(purgecss({
             content: ['www/*.html']
         }))

@@ -39,11 +39,13 @@ $(document).ready(function() {
     $('.e-navbar-mobile').on('click', function() {
         $('.e-catalog-aside').addClass('open')
         $('body').addClass('overflow-hidden')
+        $('#page').addClass('bg-overlay')
     })
 
     $('.e-navbar-back-mobile').on('click', function() {
         $('.e-catalog-aside').removeClass('open')
         $('body').removeClass('overflow-hidden')
+        $('#page').removeClass('bg-overlay')
     })
 
     $('.e-navbar__item').on('click', function(e) {
