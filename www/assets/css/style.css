@@ -10707,21 +10707,136 @@ section {
     padding-top: 0
 }
 
-.e-catalog-aside {
-    padding: 50px 0;
-    background: #fff;
-    position: fixed;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    z-index: 10;
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease
+@media (min-width: 744px) {
+    .e-catalog {
+        position: relative
+    }
 }
 
-.e-catalog-aside.open {
-    left: 0
+@media (min-width: 1024px) {
+    .e-catalog {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between
+    }
+}
+
+.e-cart {
+    display: none
+}
+
+@media (min-width: 744px) {
+    .e-cart {
+        position: absolute;
+        right: 0;
+        bottom: calc(100% - 50px);
+        display: block;
+        cursor: pointer
+    }
+}
+
+@media (min-width: 1400px) {
+    .e-cart {
+        bottom: 100%
+    }
+}
+
+@media (min-width: 744px) {
+    .e-cart-item {
+        background: #143A84;
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%
+    }
+}
+
+@media (min-width: 744px) {
+    .e-cart-item::before {
+        content: '\f07a';
+        font-family: "Font Awesome 6 Pro";
+        font-weight: 300;
+        font-size: 33px;
+        line-height: 1;
+        color: #fff
+    }
+}
+
+@media (min-width: 744px) {
+    .e-cart-item::after {
+        content: attr(data-cart);
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        background: #E6332A;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        font-weight: 600;
+        font-size: 20px;
+        color: #fff;
+        border-radius: 50%
+    }
+}
+
+@media (max-width: 1023px) {
+    .e-catalog-aside {
+        padding: 50px 0;
+        background: #fff;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease
+    }
+}
+
+@media (min-width: 744px) {
+    .e-catalog-aside {
+        max-width: 400px
+    }
+}
+
+@media (min-width: 1024px) {
+    .e-catalog-aside {
+        width: calc(25% - 15px);
+        max-width: unset
+    }
+}
+
+@media (min-width: 1920px) {
+    .e-catalog-aside {
+        width: calc(25% - 40px)
+    }
+}
+
+@media (max-width: 1023px) {
+    .e-catalog-aside.open {
+        left: 0%
+    }
 }
 
 .e-navbar-back-mobile {
@@ -10732,6 +10847,12 @@ section {
     max-width: 150px;
     font-size: 14px;
     text-align: center
+}
+
+@media (min-width: 1024px) {
+    .e-navbar-back-mobile {
+        display: none
+    }
 }
 
 .e-navbar-back-mobile::before {
@@ -10749,6 +10870,31 @@ section {
     cursor: pointer
 }
 
+@media (min-width: 1024px) {
+    .e-navbar__item {
+        padding: 10px 15px;
+        background: transparent
+    }
+}
+
+@media (min-width: 1400px) {
+    .e-navbar__item {
+        padding: 15px
+    }
+}
+
+@media (min-width: 1920px) {
+    .e-navbar__item {
+        padding: 28px 28px 28px 30px
+    }
+}
+
+@media (min-width: 1024px) {
+    .e-navbar__item:hover {
+        background: #F2F2F2
+    }
+}
+
 .e-navbar__item::after {
     content: '\f0da';
     position: absolute;
@@ -10763,14 +10909,30 @@ section {
     transition: all 0.5s ease
 }
 
+@media (min-width: 1024px) {
+    .e-navbar__item::after {
+        top: 15px;
+        right: 15px
+    }
+}
+
+@media (min-width: 1920px) {
+    .e-navbar__item::after {
+        top: 28px;
+        right: 28px
+    }
+}
+
 .e-navbar__item.active::after {
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg)
 }
 
-.e-navbar__item ~ .e-navbar__item {
-    margin-top: 15px
+@media (max-width: 1023px) {
+    .e-navbar__item ~ .e-navbar__item {
+        margin-top: 15px
+    }
 }
 
 .e-navbar__link {
@@ -10780,9 +10942,22 @@ section {
     text-transform: uppercase
 }
 
+@media (min-width: 1024px) {
+    .e-navbar__link {
+        max-width: 132px
+    }
+}
+
 @media (min-width: 1400px) {
     .e-navbar__link {
+        max-width: 210px;
         font-size: 16px
+    }
+}
+
+@media (min-width: 1920px) {
+    .e-navbar__link {
+        max-width: unset
     }
 }
 
@@ -10792,8 +10967,39 @@ section {
     display: none
 }
 
+@media (min-width: 1024px) {
+    .e-subnav {
+        margin-top: 0;
+        padding: 15px 0
+    }
+}
+
 .e-subnav__item ~ .e-subnav__item {
     margin-top: 10px
+}
+
+@media (min-width: 1024px) {
+    .e-catalog-container {
+        width: calc(75% - 15px)
+    }
+}
+
+@media (min-width: 1920px) {
+    .e-catalog-container {
+        width: calc(75% - 10px)
+    }
+}
+
+@media (min-width: 1024px) {
+    .e-subnav__link {
+        font-size: 14px
+    }
+}
+
+@media (min-width: 1400px) {
+    .e-subnav__link {
+        font-size: 16px
+    }
 }
 
 @media (min-width: 744px) {
@@ -10805,6 +11011,12 @@ section {
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center
+    }
+}
+
+@media (min-width: 1024px) {
+    .e-catalog-filters {
+        margin: 20px 0
     }
 }
 
@@ -10824,6 +11036,12 @@ section {
     }
 }
 
+@media (min-width: 1024px) {
+    .e-navbar-mobile {
+        display: none
+    }
+}
+
 .e-filters__result {
     margin-top: 12px;
     font-weight: 700;
@@ -10836,6 +11054,14 @@ section {
         margin-top: 0;
         margin-left: 60px;
         max-width: 150px
+    }
+}
+
+@media (min-width: 1024px) {
+    .e-filters__result {
+        margin-left: 0;
+        max-width: unset;
+        font-size: 16px
     }
 }
 
@@ -10858,6 +11084,19 @@ section {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none
+}
+
+@media (min-width: 1024px) {
+    .e-orderby {
+        padding: 12px 45px 12px 20px;
+        font-size: 20px
+    }
+}
+
+@media (min-width: 1024px) {
+    .e-orderby option {
+        font-size: 14px
+    }
 }
 
 .e-filter-select::after {
@@ -10896,6 +11135,19 @@ section {
     }
 }
 
+@media (min-width: 1024px) {
+    .e-catalog__block {
+        margin-bottom: 40px;
+        width: calc((100% / 3) - (60px / 3))
+    }
+}
+
+@media (min-width: 1400px) {
+    .e-catalog__block {
+        width: calc((100% / 3) - (80px / 3))
+    }
+}
+
 @media (max-width: 743px) {
     .e-catalog__block ~ .e-catalog__block {
         margin-top: 30px
@@ -10910,6 +11162,29 @@ section {
     .e-catalog__img {
         height: calc((100vw / 3) / 1.333 - 20px)
     }
+}
+
+@media (min-width: 1024px) {
+    .e-catalog__img {
+        height: calc((100vw / 3) / 1.333 - 96px)
+    }
+}
+
+@media (min-width: 1400px) {
+    .e-catalog__img {
+        height: calc(((100vw - 595px) / 3) / 1.333)
+    }
+}
+
+@media (min-width: 1920px) {
+    .e-catalog__img {
+        height: 300px
+    }
+}
+
+.e-catalog__img img {
+    -o-object-position: bottom;
+    object-position: bottom
 }
 
 .e-cactalog__title {
@@ -10932,6 +11207,14 @@ section {
     }
 }
 
+@media (min-width: 1400px) {
+    .e-cactalog__title {
+        margin-top: 20px;
+        height: 44px;
+        font-size: 16px
+    }
+}
+
 .e-cactalog__label {
     margin-top: 16px
 }
@@ -10942,8 +11225,32 @@ section {
     }
 }
 
+@media (min-width: 1400px) {
+    .e-cactalog__label {
+        margin-top: 20px
+    }
+}
+
 .e-catalog-container .pagination {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center
+}
+
+@media (min-width: 1024px) {
+    .e-catalog-container .pagination {
+        margin-top: 0
+    }
+}
+
+@media (min-width: 1400px) {
+    .e-catalog-container .pagination {
+        margin-top: 10px
+    }
+}
+
+@media (min-width: 1920px) {
+    .e-catalog-container .pagination {
+        margin-top: 20px
+    }
 }

@@ -48,7 +48,7 @@ $(document).ready(function() {
         }
     })
 
-    let item_cart_pagination = new Swiper('.swiper-item-pagination', {
+    let item_cart_pagination = new Swiper('.e-item-slider__nav', {
         spaceBetween: 10,
         slidesPerView: 4,
         freeMode: true,
@@ -60,7 +60,7 @@ $(document).ready(function() {
         }
     });
 
-    let item_cart = new Swiper('.swiper-item', {
+    let item_cart = new Swiper('.e-item-slider__main', {
         slidesPerView: "auto",
         centeredSlides: true,
         slidesPerView: 1,
