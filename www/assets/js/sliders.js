@@ -49,7 +49,7 @@ $(document).ready(function() {
     })
 
     let item_cart_pagination = new Swiper('.e-item-slider__nav', {
-        spaceBetween: 10,
+        spaceBetween: 20,
         slidesPerView: 4,
         freeMode: true,
         watchSlidesProgress: true,
@@ -58,7 +58,7 @@ $(document).ready(function() {
             spaceBetween: 40
           }
         }
-    });
+    })
 
     let item_cart = new Swiper('.e-item-slider__main', {
         slidesPerView: "auto",
@@ -67,6 +67,12 @@ $(document).ready(function() {
         thumbs: {
           swiper: item_cart_pagination,
         },
-    });
+    })
+
+    let itemInfoNav = new Swiper('.e-item-info-nav .swiper', {
+        spaceBetween: 20,
+        slidesPerView: 'auto',
+        freeMode: true
+    })
 
 });

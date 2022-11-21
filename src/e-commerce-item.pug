@@ -12,65 +12,165 @@ block main
     include components/_breadcrumbs
     +breadcrumbs('', 'Каталог', 'Пиломатериалы', 'Поручень строганный, сухой, сращенный')
 
-    section.e-commerce
+    section.e-commerce-item
 
-        .container
+        .e-item
 
-            .e-item
+            .container
 
-                .e-item-slider
+                .e-item-wrap
 
-                    .e-item-slider__main.swiper
+                    .e-item-slider
 
-                        .swiper-wrapper
+                        .e-item-slider__main.swiper
 
-                            .swiper-slide
-                                .e-item__image
-                                    img(src="assets/images/e-commer-item.jpg", alt="img")
+                            .swiper-wrapper
 
-                            .swiper-slide
-                                .e-item__image
-                                    img(src="assets/images/e-commer-item.jpg", alt="img")
+                                .swiper-slide
+                                    .e-item__image
+                                        img(src="assets/images/e-commer-item.jpg", alt="img")
 
-                            .swiper-slide
-                                .e-item__image
-                                    img(src="assets/images/e-commer-item.jpg", alt="img")
+                                .swiper-slide
+                                    .e-item__image
+                                        img(src="assets/images/e-commer-item.jpg", alt="img")
 
-                            .swiper-slide
-                                .e-item__image
-                                    img(src="assets/images/e-commer-item.jpg", alt="img")
+                                .swiper-slide
+                                    .e-item__image
+                                        img(src="assets/images/e-commer-item.jpg", alt="img")
+
+                                .swiper-slide
+                                    .e-item__image
+                                        img(src="assets/images/e-commer-item.jpg", alt="img")
+
+                                .swiper-slide
+                                    .e-item__image
+                                        img(src="assets/images/e-commer-item.jpg", alt="img")
 
 
-                    .e-item-slider__nav.swiper
+                        .e-item-slider__nav.swiper
 
-                        .swiper-wrapper
+                            .swiper-wrapper
 
-                            .swiper-slide
-                                .e-nav__image
-                                    img(src="assets/images/e-commer-item.jpg", alt="img")
+                                .swiper-slide
+                                    .e-nav__image
+                                        img(src="assets/images/e-commer-item.jpg", alt="img")
 
-                            .swiper-slide
-                                .e-nav__image
-                                    img(src="assets/images/e-commer-item.jpg", alt="img")
+                                .swiper-slide
+                                    .e-nav__image
+                                        img(src="assets/images/e-commer-item.jpg", alt="img")
 
-                            .swiper-slide
-                                .e-nav__image
-                                    img(src="assets/images/e-commer-item.jpg", alt="img")
+                                .swiper-slide
+                                    .e-nav__image
+                                        img(src="assets/images/e-commer-item.jpg", alt="img")
 
-                            .swiper-slide
-                                .e-nav__image
-                                    img(src="assets/images/e-commer-item.jpg", alt="img")
+                                .swiper-slide
+                                    .e-nav__image
+                                        img(src="assets/images/e-commer-item.jpg", alt="img")
 
-                .e-item-desc
+                                .swiper-slide
+                                    .e-nav__image
+                                        img(src="assets/images/e-commer-item.jpg", alt="img")
 
-                    h1.s-title ПОРУЧЕНЬ строганный, сухой, сращенный
-                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor odio orci tristique montes, dui vitae senectus. Viverra amet habitant nisi, condimentum eu dui maecenas. Enim in neque condimentum id tellus sagittis id volutpat. Gravida accumsan ultricies nibh commodo habitant ipsum quam pellentesque.
+                    .e-item-desc
 
-                    p Артикул: D48765
-                    p Размер: 18х25х3000 мм
+                        h1.e-item-title.s-title ПОРУЧЕНЬ строганный, сухой, сращенный
+                        p.e-item__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor odio orci tristique montes, dui vitae senectus. Viverra amet habitant nisi, condimentum eu dui maecenas. Enim in neque condimentum id tellus sagittis id volutpat. Gravida accumsan ultricies nibh commodo habitant ipsum quam pellentesque.
 
-                    p 14 700 ₽/ м3
+                        p.e-item__code <b>Артикул:</b>  D48765
+                        p.e-item__size <b>Размер:</b>  18х25х3000 мм
 
-                    input(type="number" value=1000)
-                    .button-style.button-style--red В корзину
-                    .button-style.button-style--blue Купить в один клик
+                        p.e-item__price 14 700 ₽/ м3
+
+                        .e-item__buttons
+                            .e-item__quantity
+                                input(type="number" value=10000)
+                            .button-style.button-style--red В корзину
+                            .button-style.button-style--blue Купить в один клик
+
+        .e-item-info
+
+            .e-item-info-nav
+
+                .swiper
+
+                    .swiper-wrapper
+
+                        .swiper-slide.e-item-nav__lnk.active(data-show=1)
+                            p Характеристики
+
+                        .swiper-slide.e-item-nav__lnk(data-show=2)
+                            p Описание
+
+                        .swiper-slide.e-item-nav__lnk(data-show=3)
+                            p Доставка и оплата
+
+                        .swiper-slide.e-item-nav__lnk(data-show=4)
+                            p Гарантия
+
+            .e-item-info-container
+
+                .container
+
+                    .e-item-info-content.active(data-show=1)
+
+                        .e-item-info-table
+
+                            .e-table-row
+                                .e-table-label Артикул
+                                .e-table-value D48765
+
+                            .e-table-row
+                                .e-table-label Длина
+                                .e-table-value 140мм
+
+                            .e-table-row
+                                .e-table-label Ширина
+                                .e-table-value 60мм
+
+                            .e-table-row
+                                .e-table-label Глубина
+                                .e-table-value 30мм
+
+                            .e-table-row
+                                .e-table-label Материал
+                                .e-table-value Дерево
+
+                            .e-table-row
+                                .e-table-label Влажность %
+                                .e-table-value 12
+
+                    .e-item-info-content(data-show=2)
+                    .e-item-info-content(data-show=3)
+                    .e-item-info-content(data-show=4)
+
+        .similar-section.catalog
+
+            .container
+
+                h2.s-title Похожие проекты
+
+                    .catalog__inner
+
+                        .catalog__item
+                            a(href="#")
+                                .catalog__item-image
+                                    img(src="assets/images/img-4.jpg", alt="img")
+                                p.catalog__item-title Каркасный дом «Кидекша»
+                                .catalog__item-price
+                                    p.label-style.label-style--blue от 3 350 000 ₽
+
+                        .catalog__item
+                            a(href="#")
+                                .catalog__item-image
+                                    img(src="assets/images/img-4.jpg", alt="img")
+                                p.catalog__item-title Каркасный дом «Кидекша»
+                                .catalog__item-price
+                                    p.label-style.label-style--blue от 3 350 000 ₽
+
+                        .catalog__item
+                            a(href="#")
+                                .catalog__item-image
+                                    img(src="assets/images/img-4.jpg", alt="img")
+                                p.catalog__item-title Каркасный дом «Кидекша»
+                                .catalog__item-price
+                                    p.label-style.label-style--blue от 3 350 000 ₽
