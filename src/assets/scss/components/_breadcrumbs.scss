@@ -25,6 +25,7 @@
     @include breakpoint(md) {
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
     }
 }
 
@@ -32,11 +33,6 @@
     font-weight: 400;
     font-size: 20px;
     color: gray;
-
-    @include breakpointMax(xl) {
-        max-width: 360px;
-        @include textLimit(1);
-    }
 }
 
 .breadcrumbs-separator {

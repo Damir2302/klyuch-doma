@@ -53,9 +53,16 @@ $(document).ready(function() {
         slidesPerView: 4,
         freeMode: true,
         watchSlidesProgress: true,
+
         breakpoints: {
-          470: {
-            spaceBetween: 40
+          744: {
+            slidesPerView: 6,
+            spaceBetween: 20
+          },
+
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 30
           }
         }
     })
@@ -64,15 +71,27 @@ $(document).ready(function() {
         slidesPerView: "auto",
         centeredSlides: true,
         slidesPerView: 1,
+
         thumbs: {
           swiper: item_cart_pagination,
         },
+
+        navigation: {
+            nextEl: '.e-item-btn-next',
+            prevEl: '.e-item-btn-prev',
+        }
     })
 
     let itemInfoNav = new Swiper('.e-item-info-nav .swiper', {
         spaceBetween: 20,
         slidesPerView: 'auto',
-        freeMode: true
+        freeMode: true,
+
+        breakpoints: {
+            744: {
+              spaceBetween: 'auto'
+            }
+        }
     })
 
 });

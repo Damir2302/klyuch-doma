@@ -55,4 +55,12 @@ $(document).ready(function() {
         }
     })
 
+    $('.e-item-nav__lnk').on('click', function() {
+        $('.e-item-nav__lnk').removeClass('active')
+        $(this).addClass('active')
+
+        $('.e-item-info-content').removeClass('active')
+        $(`.e-item-info-content[data-show=${$(this).attr('data-show')}]`).addClass('active')
+    })
+
 });
