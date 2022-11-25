@@ -1,0 +1,271 @@
+.e-shop__head {
+    display: none;
+
+    @include breakpoint(lg) {
+        padding-bottom: 10px;
+        display: flex;
+    }
+
+    @include breakpoint(hd) {
+        padding-bottom: 20px;
+        font-size: 20px;
+    }
+}
+
+.e-shop__head-label {
+
+    @include breakpoint(lg) {
+        margin-left: 162px;
+    }
+
+    @include breakpoint(xl) {
+        margin-left: 207px;
+    }
+
+    @include breakpoint(hd) {
+        margin-left: 295px;
+    }
+}
+
+.e-shop__head-price {
+
+    @include breakpoint(lg) {
+        margin-left: 195px;
+    }
+
+    @include breakpoint(xl) {
+        margin-left: 355px;
+    }
+
+    @include breakpoint(hd) {
+        margin-left: 555px;
+    }
+}
+
+.e-shop__head-quantity {
+
+    @include breakpoint(lg) {
+        margin-left: 112px;
+    }
+
+    @include breakpoint(hd) {
+        margin-left: 170px;
+    }
+}
+
+.e-shop__head-total {
+
+    @include breakpoint(lg) {
+        margin-left: 95px;
+    }
+
+    @include breakpoint(hd) {
+        margin-left: 170px;
+    }
+}
+
+.e-shop__inner {
+    border: 1px solid #E0E0E0;
+    border-left: none;
+    border-right: none;
+}
+
+.e-shop-item {
+    padding: 20px 0;
+
+    @include breakpoint(xl) {
+        padding: 25px 0;
+    }
+}
+
+.e-shop-item ~ .e-shop-item {
+    padding-top: 20px;
+    border-top: 1px solid #E0E0E0;
+}
+
+.e-shop-item__inner {
+
+    @include breakpoint(lg) {
+        display: flex;
+        max-width: 944px;
+    }
+
+    @include breakpoint(xl) {
+        max-width: 1200px;
+    }
+
+    @include breakpoint(hd) {
+        max-width: 1720px;
+    }
+}
+
+.e-shop-image {
+    flex-shrink: 0;
+
+    @include breakpointMax(lg) {
+        display: none;
+    }
+
+    @include breakpoint(lg) {
+        width: 132px;
+        height: 99px;
+    }
+
+    @include breakpoint(xl) {
+        width: 167px;
+        height: 125px;
+    }
+
+    @include breakpoint(hd) {
+        width: 253px;
+        height: 190px;
+    }
+}
+
+.e-shop-mobile-title {
+
+    @include breakpoint(lg) {
+        display: none;
+    }
+}
+
+.e-shop-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.e-shop-row ~ .e-shop-row {
+
+    @include breakpointMax(lg) {
+        margin-top: 20px;
+    }
+}
+
+.e-shop-row:nth-child(3) {
+
+    @include breakpointMax(lg) {
+        margin-top: 35px;
+    }
+}
+
+.e-shop-row:nth-child(4) {
+    align-items: center;
+
+    @include breakpoint(lg) {
+        align-items: unset;
+    }
+}
+
+.e-shop-row p {
+    min-width: 100px;
+    max-width: 100px;
+}
+
+.e-shop-label {
+    margin-left: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: right;
+    text-transform: uppercase;
+
+    @include breakpoint(lg) {
+        margin-left: 30px;
+        width: 214px;
+        text-align: left;
+    }
+
+    @include breakpoint(xl) {
+        margin-left: 40px;
+        width: 375px;
+        font-size: 16px;
+    }
+
+    @include breakpoint(hd) {
+        width: 547px;
+        font-size: 25px;
+    }
+}
+
+.e-shop-price {
+    font-weight: 700;
+
+    @include breakpoint(lg) {
+        margin-left: 30px;
+    }
+
+    @include breakpoint(xl) {
+        font-size: 16px;
+    }
+
+    @include breakpoint(hd) {
+        margin-left: 70px;
+        font-size: 25px;
+    }
+}
+
+.e-shop-quantity {
+    width: 110px;
+    height: 54px;
+    border: 1px solid #E0E0E0;
+
+    @include breakpoint(lg) {
+        margin-left: 50px;
+    }
+
+    @include breakpoint(hd) {
+        margin-left: 55px;
+    }
+}
+
+.e-shop-quantity input {
+    padding: 14px 20px;
+    width: 100%;
+    height: 100%;
+    font-size: 17px;
+    box-sizing: border-box;
+}
+
+.e-shop-total {
+    font-weight: 700;
+
+    @include breakpoint(lg) {
+        margin-left: 80px;
+    }
+
+    @include breakpoint(xl) {
+        font-size: 16px;
+    }
+
+    @include breakpoint(hd) {
+        margin-left: 185px;
+        font-size: 25px;
+    }
+}
+
+.e-shop-remove {
+    margin-left: auto;
+    background: $red;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+
+    @include breakpointMax(lg) {
+        margin-top: 35px;
+    }
+}
+
+.e-shop-remove:hover {
+    background: $darkred;
+}
+
+.e-shop-remove i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    font-family: $fa5;
+    font-size: 20px;
+    line-height: 1;
+    color: #fff;
+}

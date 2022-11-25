@@ -89,7 +89,7 @@ block main
 
                         .e-item__buttons
                             .e-item__quantity
-                                input(type="number" value=10000)
+                                input(type="number" value=1)
                             .button-style.button-style--red В корзину
                             .button-style.button-style--blue Купить в один клик
 
@@ -101,11 +101,11 @@ block main
 
                     .swiper-wrapper
 
-                        .swiper-slide.e-item-nav__lnk.active(data-show=1)
-                            p Характеристики
-
-                        .swiper-slide.e-item-nav__lnk(data-show=2)
+                        .swiper-slide.e-item-nav__lnk(data-show=1)
                             p Описание
+
+                        .swiper-slide.e-item-nav__lnk.active(data-show=2)
+                            p Характеристики
 
                         .swiper-slide.e-item-nav__lnk(data-show=3)
                             p Доставка и оплата
@@ -117,7 +117,10 @@ block main
 
                 .container
 
-                    .e-item-info-content.active(data-show=1)
+                    .e-item-info-content(data-show=1)
+                        p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, maxime!
+
+                    .e-item-info-content.active(data-show=2)
 
                         .e-item-info-table
 
@@ -145,8 +148,6 @@ block main
                                 .e-table-label Влажность %
                                 .e-table-value 12
 
-                    .e-item-info-content(data-show=2)
-                        p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, maxime!
                     .e-item-info-content(data-show=3)
                         p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit ipsa nemo, quae quaerat quis molestiae!
                     .e-item-info-content(data-show=4)

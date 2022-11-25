@@ -63,6 +63,16 @@ $(document).ready(function() {
           1024: {
             slidesPerView: 4,
             spaceBetween: 30
+          },
+
+          1400: {
+            slidesPerView: 5,
+            spaceBetween: 40
+          },
+
+          1920: {
+            slidesPerView: 6,
+            spaceBetween: 40
           }
         }
     })

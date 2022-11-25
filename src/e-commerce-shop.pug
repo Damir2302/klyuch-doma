@@ -1,0 +1,84 @@
+---
+title: Klyuch 585 | Корзина
+---
+
+extends includes/_page
+
+block main
+
+    include includes/_mixins
+
+    include components/_breadcrumbs
+    +breadcrumbs('Корзина', 'Корзина')
+
+    section.e-commerce-shop
+
+        .e-shop
+
+            .container
+                .e-shop__head
+                    .e-shop__head-label Товар
+                    .e-shop__head-price Цена
+                    .e-shop__head-quantity Количество
+                    .e-shop__head-total Итого
+
+            .e-shop__inner
+
+                .e-shop-item
+
+                    .container
+
+                        .e-shop-item__inner
+
+                            .e-shop-image
+                                img(src="assets/images/e-commers.jpg", alt="img")
+
+                            .e-shop-row
+                                p.e-shop-mobile-title Товар
+                                .e-shop-label ПОРУЧЕНЬ строганный, сухой, сращенный
+
+                            .e-shop-row
+                                p.e-shop-mobile-title Цена
+                                .e-shop-price 14 000 700 ₽
+
+                            .e-shop-row
+                                p.e-shop-mobile-title Количество
+                                .e-shop-quantity
+                                    input(type="number", value=10000)
+
+                            .e-shop-row
+                                p.e-shop-mobile-title Итого
+                                .e-shop-total 14 000 700 ₽
+
+                            .e-shop-remove
+                                i.fad.fa-xmark
+
+                .e-shop-item
+
+                    .container
+
+                        .e-shop-item__inner
+
+                            .e-shop-image
+                                img(src="assets/images/e-commers.jpg", alt="img")
+
+                            .e-shop-row
+                                p.e-shop-mobile-title Товар
+                                .e-shop-label ПОРУЧЕНЬ строганный, сухой, сращенный
+
+                            .e-shop-row
+                                p.e-shop-mobile-title Цена
+                                .e-shop-price 14 000 700 ₽
+
+                            .e-shop-row
+                                p.e-shop-mobile-title Количество
+                                .e-shop-quantity
+                                    input(type="number", value=10000)
+
+                            .e-shop-row
+                                p.e-shop-mobile-title Итого
+                                .e-shop-total 14 000 700 ₽
+
+                            .e-shop-remove
+                                i.fad.fa-xmark
+
