@@ -123,7 +123,7 @@
     }
 
     @include breakpoint(xl) {
-        padding: 60px 100px 75px 130px;
+        padding: 60px 100px 165px 130px;
         top: 163px;
     }
 
@@ -213,6 +213,21 @@
     @include breakpoint(md) {
         margin-top: 30px;
     }
+
+    @include breakpoint(lg) {
+        margin-top: 0;
+    }
+}
+
+.small-menu .popup-submenu {
+
+    @include breakpoint(lg) {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        max-height: 300px;
+    }
 }
 
 .popup-submenu__item {
@@ -221,6 +236,13 @@
 
     @include breakpoint(md) {
         margin-bottom: 20px;
+    }
+}
+
+.small-menu .popup-submenu__item {
+
+    @include breakpoint(lg) {
+        margin-right: 50px;
     }
 }
 

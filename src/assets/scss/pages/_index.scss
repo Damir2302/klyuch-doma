@@ -1104,11 +1104,11 @@
 
     @include breakpoint(xl) {
         padding: 60px 40px;
+        width: calc(25% - 30px);
     }
 
     @include breakpoint(hd) {
         padding: 90px 40px 50px;
-        width: calc(25% - 30px);
     }
 }
 
@@ -1130,7 +1130,7 @@
         margin-bottom: 30px;
     }
 
-    @include breakpoint(hd) {
+    @include breakpoint(xl) {
         margin-bottom: 0;
     }
 }
@@ -1170,6 +1170,11 @@
     @include breakpoint(xl) {
         margin-top: 60px;
         max-width: 100%;
+        font-size: 18px;
+    }
+
+    @include breakpoint(hd) {
+        font-size: 25px;
     }
 }
 
@@ -1189,6 +1194,14 @@
     display: flex;
 
     @include breakpoint(md) {
+        font-size: 20px;
+    }
+
+    @include breakpoint(xl) {
+        font-size: 16px;
+    }
+
+    @include breakpoint(hd) {
         font-size: 20px;
     }
 }

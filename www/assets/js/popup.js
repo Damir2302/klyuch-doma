@@ -2,7 +2,7 @@ $(document).ready(function() {
 
     // ДЛЯ ВСЕХ(!!!!!!) ВСПЛЫВАЮЩИХ ОКОН [Если кликаем вне всплывающего поля, представленных ниже]
     $('html').on('click', function(e) {
-        if (!$(e.target).closest('#menu').length &&
+        if (!$(e.target).closest('.nav__menu-item.has-submenu').length &&
             !$(e.target).closest('.popup__inner').length &&
             !$(e.target).closest('#project-dwld').length &&
             !$(e.target).closest('.c-price__item-spec').length &&
@@ -11,7 +11,7 @@ $(document).ready(function() {
             !$(e.target).closest('.e-navbar-mobile').length) {
             $('body').removeClass('overflow-hidden')
             $('#page').removeClass('bg-overlay')
-            $('#menu').removeClass('active')
+            $('.nav__menu-item.has-submenu').removeClass('active')
             $('.popup').removeClass('show')
             $('.popup__inner').removeClass('active')
             $('.c-price-specification').removeClass('show')

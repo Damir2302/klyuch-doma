@@ -12,7 +12,7 @@ $(document).ready(function() {
     })
 
     // MENU DESKTOP
-    $('#menu').on('click', function(e) {
+    $('.nav__menu-item.has-submenu').on('click', function(e) {
         if ($(window).width() >= 1024 && e.target.className == 'nav__menu-link') {
             $(this).addClass('active')
             $('body').addClass('overflow-hidden')
